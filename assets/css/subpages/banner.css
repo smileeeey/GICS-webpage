@@ -1,0 +1,81 @@
+a:hover {
+  color: #223166;
+  font-weight: bold;
+}
+
+div.introBnr ul,
+div.introBnr li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.introBnr {
+  position: relative;
+  height: 90px;
+  margin-top: 40px;
+  padding: 0 90px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+div.introBnr > ul {
+}
+
+div.introBnr > ul:after {
+  clear: both;
+  display: block;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  content: '';
+}
+
+div.introBnr > ul li {
+  float: left;
+  padding-left: 50px;
+}
+
+div.introBnr > ul li:first-child {
+  padding-left: 0;
+}
+
+div.introBnr li a {
+  display: table-cell;
+  width: 200px;
+  height: 90px;
+  vertical-align: middle;
+}
+
+div.introBnr img {
+  display: inline-block;
+  width: 200px;
+}
+
+div.introBnr a.bx-prev,
+div.introBnr a.bx-next {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  font-size: 0;
+  line-height: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div.introBnr a.bx-prev {
+  left: 0;
+  background-image: url('layout/intro_prev.png');
+}
+
+div.introBnr a.bx-next {
+  right: 0;
+  background-image: url('layout/intro_next.png');
+}
+
+div.loginArea div.formArea + div.introBnr {
+}
