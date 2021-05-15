@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="ko">
 
 <head>
-  <!-- Common -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>GICS 2021</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>GICS</title>
 
-  <!-- Favicon -->
-  <link href="../assets/img/carrot.PNG" rel="icon">
+  <!-- Favicons -->
+  <link href="../assets/img/carrot.PNG" rel="icon" />
 
-  <link rel="stylesheet" href="../_semantic/semantic.min.css">
-  <script src="../assets/js/jquery.min.js"></script>
-  <script src="../_semantic/semantic.min.js"></script>
+  <!-- Fonts -->
+
+  <!-- Vendor CSS Files -->
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+
+  <!-- page CSS File -->
+  <link href="../assets/css/pages/home.css" rel="stylesheet" />
+
+  <link type="text/css" rel="stylesheet" href="../assets/css/pages/home.css">
+
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.bxslider.min.js"></script>
+  <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+
 </head>
 
 <body>
-  <!-- Sidebar Menu -->
-  <div data-include-path="../subpages/sidebar.html"></div>
+  <div data-include-path="../subpages/header.html"></div>
+  <div id="index_pc">
+    <div class="main">
+      <div class="inner">
+        <iframe width="295" height="180" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="video-object"></iframe>
 
-  <div class="pusher">
-    <div data-include-path="../subpages/navigator.html"></div>
-    
-    <div class="ui vertical segment">
-      <div class="ui text container">
-        <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-        <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing
-          by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth
-          your attention.</p>
-        <a class="ui large button">Read More</a>
-        <h4 class="ui horizontal header divider">
-          <a href="#">Case Studies</a>
-        </h4>
-        <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-        <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true.
-          It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-        <a class="ui large button">I'm Still Quite Interested</a>
+        <a href="#" class="btn-object btn-object-v1"></a>
+        <a href="#" class="btn-object btn-object-v2"></a>
+        <a href="#" class="btn-object btn-object-v3"></a>
       </div>
     </div>
-
-    <footer data-include-path="../subpages/footer.html"></footer>
   </div>
+  <div data-include-path="../subpages/banner.html"></div>
+  
+  <div id="gotoTop" class="icon-angle-up"></div>
 </body>
 
 <script src="../assets/js/include_html.js"></script>
