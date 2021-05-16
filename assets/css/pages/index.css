@@ -1,19 +1,4 @@
 /* COMMON */
-#pc {
-  display: block;
-}
-#mobile {
-  display: none;
-}
-
-@media screen and (max-width: 768px) and (min-width: 0) {
-  #pc {
-    display: none;
-  }
-  #mobile {
-    display: block;
-  }
-}
 
 body {
   width: 100%;
@@ -30,8 +15,7 @@ body {
   filter: alpha(opacity=50);
 }
 
-/* PC */
-#pc .logo-pc {
+.logo {
   width: 100%;
   height:auto;
 
@@ -40,10 +24,12 @@ body {
   margin-bottom: 50px;
 }
 
-#pc .logo-pc img {
+.logo img {
   width: 250px;
 }
 
+
+/* PC */
 #pc .introBtn-pc {
   text-align: center;
   width: 100%;
@@ -61,8 +47,8 @@ body {
 #pc .introBtn-pc li {
   font-size: 0;
   content: ' ';
-  margin: 10px;
-  width: 40%;
+  margin: 1%;
+  width: 48%;
   height:auto;
 
   float: left;
@@ -98,16 +84,6 @@ body {
 }
 
 /* MOBILE */
-#mobile .logo-mobile {
-  width: 100%;
-  text-align: center;
-  margin: 0px auto;
-  margin-bottom: 50px;
-}
-#mobile .logo-mobile img {
-  width: 200px;
-}
-
 #mobile .introBtn-mobile {
   width: 100%;
   text-align: center;
@@ -116,4 +92,17 @@ body {
 
 #mobile .introBtn-mobile img {
   width: 200px;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 0) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+  .logo img {
+    width: 200px;
+  }
 }

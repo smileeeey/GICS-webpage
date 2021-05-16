@@ -1,35 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>GICS</title>
 
   <!-- Favicons -->
-  <link href="assets/img/carrot.PNG" rel="icon" />
+  <link href="../assets/img/carrot.PNG" rel="icon" />
 
   <!-- Fonts -->
 
   <!-- Vendor CSS Files -->
 
   <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet" />
 
-<!-- =======================================================
-* Project Name : GICS Home Page - v0.0.0
-* Author: Chae YunChang, Lee Sumin
-* Designed By : Seo Jina
-======================================================== -->
+  <!-- page CSS File -->
+  <!-- <link type="text/css" rel="stylesheet" href="../assets/css/pages/eposters.css"> -->
+  <link type="text/css" rel="stylesheet" href="../assets/css/cards.css">
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
 </head>
 
+
 <body>
-  <!-- ======= Header ======= -->
-  <div data-include-path="common/header.html"></div>
-  <h1>eposters</h1>
-  <div data-include-path="common/footer.html"></div>
+  <div class="cards">
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>Seo Jina, MD
+          <h3>Seoul Hospital</h3>
+          <small>5st Master in 2021</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Coronaviruses are a family of enveloped, single-stranded, positive-strand RNA viruses classified within
+            the Nidovirales order. This coronavirus family consists of pathogens of many animal species and of humans,
+            including the recently isolated severe acute respiratory syndrome coronavirus (SARS-CoV).
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>Seo Jina, MD
+          <h3>Seoul Hospital</h3>
+          <small>5st Master in 2021</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Coronaviruses are a family of enveloped, single-stranded, positive-strand RNA viruses classified within
+            the Nidovirales order. This coronavirus family consists of pathogens of many animal species and of humans,
+            including the recently isolated severe acute respiratory syndrome coronavirus (SARS-CoV).
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/pages/eposters.js"></script>
 </body>
 
-<script src="assets/js/include_html.js"></script>
+<script src="../assets/js/include_html.js"></script>
+
 </html>
