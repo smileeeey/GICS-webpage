@@ -1,30 +1,83 @@
-ul.introBtn,
-ul.introBtn li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-ul.introBtn {
-}
-ul.introBtn:after {
-  clear: both;
+/* COMMON */
+#pc {
   display: block;
-  height: 0;
-  line-height: 0;
+}
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 0) {
+  #pc {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+}
+
+body {
+  width: 100%;
+  height: auto;
+  border: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-image: url('../../img/index/index_bg.jpg');
+  /* min-height: 100%; */
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.5; */
+
+  filter: alpha(opacity=50);
+}
+
+/* PC */
+#pc .logo-pc {
+  width: 100%;
+  height:auto;
+
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+#pc .logo-pc img {
+  width: 250px;
+}
+
+#pc .introBtn-pc {
+  text-align: center;
+  width: 100%;
+}
+
+#pc .introBtn-pc ul {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  width: auto;
+  height: auto;
+}
+
+#pc .introBtn-pc li {
   font-size: 0;
   content: ' ';
-}
-ul.introBtn > li {
-  float: right;
-}
-ul.introBtn > li:first-child {
+  margin: 10px;
+  width: 40%;
+  height:auto;
+
   float: left;
 }
-ul.introBtn a,
-ul.introBtn img {
+
+#pc .introBtn-pc a{
   display: block;
 }
-ul.introBtn a {
+
+#pc .introBtn-pc img {
+  width: 100%;
+  height:auto;
+}
+
+#pc .introBtn-pc a {
   position: relative;
   transition: 0.35s;
   top: 0;
@@ -33,7 +86,7 @@ ul.introBtn a {
   transition-duration: 800ms;
   transition-timing-function: ease;
 }
-ul.introBtn a:hover {
+#pc .introBtn-pc a:hover {
   top: -15px;
   transform: translateZ(0);
   transform: translateY(-15px);
@@ -43,5 +96,24 @@ ul.introBtn a:hover {
   transition-duration: 0.3s;
   transition-property: transform;
 }
-ul.introBtn a:hover img {
+
+/* MOBILE */
+#mobile .logo-mobile {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+#mobile .logo-mobile img {
+  width: 200px;
+}
+
+#mobile .introBtn-mobile {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#mobile .introBtn-mobile img {
+  width: 200px;
 }

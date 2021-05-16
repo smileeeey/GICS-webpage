@@ -3,29 +3,31 @@ a:hover {
   font-weight: bold;
 }
 
-div.introBnr ul,
-div.introBnr li {
+div.banner ul,
+div.banner li {  
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-div.introBnr {
+div.banner {
   position: relative;
-  height: 90px;
+  width: 100%;
+  height: 70px;
   margin-top: 40px;
-  padding: 0 90px;
+  /* padding: 0 90px; */
   background-color: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 0;
   line-height: 0;
+  margin-bottom: 40px;
 }
 
-div.introBnr > ul {
+div.banner > ul {
 }
 
-div.introBnr > ul:after {
+div.banner > ul:after {
   clear: both;
   display: block;
   height: 0;
@@ -34,29 +36,30 @@ div.introBnr > ul:after {
   content: '';
 }
 
-div.introBnr > ul li {
+div.banner > ul li {
   float: left;
-  padding-left: 50px;
+  padding-left: 0px;
 }
 
-div.introBnr > ul li:first-child {
+div.banner > ul li:first-child {
   padding-left: 0;
 }
 
-div.introBnr li a {
+div.banner li a {
   display: table-cell;
-  width: 200px;
-  height: 90px;
+  width: 170px;
+  height: 70px;
   vertical-align: middle;
 }
 
-div.introBnr img {
+div.banner img {
   display: inline-block;
-  width: 200px;
+  width: 170px;
 }
 
-div.introBnr a.bx-prev,
-div.introBnr a.bx-next {
+/* 
+div.banner a.bx-prev,
+div.banner a.bx-next {
   position: absolute;
   top: 0;
   width: 295px;
@@ -67,15 +70,15 @@ div.introBnr a.bx-next {
   background-repeat: no-repeat;
 }
 
-div.introBnr a.bx-prev {
+div.banner a.bx-prev {
   left: 0;
   background-image: url('../../img/banner/banner_prev.png');
 }
 
-div.introBnr a.bx-next {
+div.banner a.bx-next {
   right: 0;
   background-image: url('../../img/banner/banner_next.png');
 }
 
-div.loginArea div.formArea + div.introBnr {
-}
+div.loginArea div.formArea + div.banner {
+} */
