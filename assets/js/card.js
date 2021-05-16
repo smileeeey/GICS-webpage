@@ -2,8 +2,7 @@
 $(document).ready(function() {
     var zindex = 10;
 
-    $("div.card").click(function (e) {
-        e.preventDefault();
+    $("div.card").click(function (e) {        
         var isShowing = false;
         if ($(this).hasClass("show")) {
             isShowing = true
@@ -39,5 +38,16 @@ $(document).ready(function() {
             zindex++;
         }
 
+    });
+});
+
+$(function(){
+    $('#mobile a').on("click",function(e){
+        // e.preventDefault();
+        e.stopPropagation();
+    });
+    $('#mobile audio').on("click",function(e){
+        // e.preventDefault();
+        e.stopPropagation();
     });
 });

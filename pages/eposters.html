@@ -27,11 +27,19 @@
 
 <body>
   <div class="cards">
-
     <div class="card">
-      <div class="card__image-holder">
-        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+      <div class="card-image">
+        <div style="position: absolute; right:-75%; top: -5%;">
+          <img width="20%" src="../assets/img/carrot.PNG">
+        </div>
+
+        <div class="card__image-holder">
+          <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+        </div>
+
       </div>
+
+
       <div class="card-title">
         <a href="#" class="toggle-info btn">
           <span class="left"></span>
@@ -45,45 +53,31 @@
       <div class="card-flap flap1">
         <div class="card-description">
           Coronaviruses are a family of enveloped, single-stranded, positive-strand RNA viruses classified within
-            the Nidovirales order. This coronavirus family consists of pathogens of many animal species and of humans,
-            including the recently isolated severe acute respiratory syndrome coronavirus (SARS-CoV).
+          the Nidovirales order. This coronavirus family consists of pathogens of many animal species and of humans,
+          including the recently isolated severe acute respiratory syndrome coronavirus (SARS-CoV).
         </div>
         <div class="card-flap flap2">
           <div class="card-actions">
-            <a href="#" class="btn">Read more</a>
+            <a id="pc" href="#" class="btn">Read more</a>
+            <div id="mobile">
+                <audio
+                    controls
+                    src="../assets/audio_test.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+                <div class="cropping">                  
+                  <a download href="https://apsth2021cdn.azureedge.net/cdn/upload/e_poster/thumb_1_34733_1615805216.png">
+                    <img src="https://apsth2021cdn.azureedge.net/cdn/upload/e_poster/thumb_1_34733_1615805216.png">  
+                  </a>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-holder">
-        <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
-      </div>
-      <div class="card-title">
-        <a href="#" class="toggle-info btn">
-          <span class="left"></span>
-          <span class="right"></span>
-        </a>
-        <h2>Seo Jina, MD
-          <h3>Seoul Hospital</h3>
-          <small>5st Master in 2021</small>
-        </h2>
-      </div>
-      <div class="card-flap flap1">
-        <div class="card-description">
-          Coronaviruses are a family of enveloped, single-stranded, positive-strand RNA viruses classified within
-            the Nidovirales order. This coronavirus family consists of pathogens of many animal species and of humans,
-            including the recently isolated severe acute respiratory syndrome coronavirus (SARS-CoV).
-        </div>
-        <div class="card-flap flap2">
-          <div class="card-actions">
-            <a href="#" class="btn">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div>    
   </div>
+  
 
   <script src="../assets/js/pages/eposters.js"></script>
 </body>
