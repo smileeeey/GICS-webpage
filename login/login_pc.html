@@ -37,9 +37,23 @@
   <div class="login_box">
     <div class="login">
       <div class="login_logo">
-        <img src="../data/img/logo.png">
+        <img src="../data/img/login/logo.png">
+        
+        <p><br>ID는 GICS 2021 등록 시 사용하신 이메일과 같으며,<br>
+          비밀번호는 휴대폰번호 뒤 4자리입니다.</p>
+          <br>
+        <p>ID(E-mail) isthe same as when you registered<br>
+          on the GICS 2021 official website and<br>
+          PW is the last 4 digits of your mobile phone.       
+        </p>
       </div>
       <div class="login__form">
+        <div class="login_row">
+          <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+          <label for="toggle-on" class="btn">Korea</label>
+          <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+          <label for="toggle-off" class="btn">Overseas</label>
+        </div>
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
             <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
@@ -52,7 +66,7 @@
           </svg>
           <input type="password" class="login__input pass" placeholder="Password" />
         </div>
-        <button type="button" class="login__submit">Sign in</button>
+        <button type="button" class="login__submit">Login</button>
         <!-- <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p> -->
       </div>
     </div>
