@@ -1,14 +1,5 @@
 /* COMMON */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   width: 100%;
   height: auto;
@@ -38,12 +29,12 @@ body {
 }
 
 /* PC */
-.introBtn-pc {
+#pc .introBtn-pc {
   text-align: center;
   width: 100%;
 }
 
-.introBtn-pc ul {
+#pc .introBtn-pc ul {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -52,7 +43,7 @@ body {
   height: auto;
 }
 
-.introBtn-pc li {
+#pc .introBtn-pc li {
   font-size: 0;
   content: ' ';
   margin: 1%;
@@ -62,16 +53,16 @@ body {
   float: left;
 }
 
-.introBtn-pc a {
+#pc .introBtn-pc a {
   display: block;
 }
 
-.introBtn-pc img {
+#pc .introBtn-pc img {
   width: 100%;
   height: auto;
 }
 
-.introBtn-pc a {
+#pc .introBtn-pc a {
   position: relative;
   transition: 0.35s;
   top: 0;
@@ -80,7 +71,7 @@ body {
   transition-duration: 800ms;
   transition-timing-function: ease;
 }
-.introBtn-pc a:hover {
+#pc .introBtn-pc a:hover {
   top: -15px;
   transform: translateZ(0);
   transform: translateY(-15px);
@@ -89,4 +80,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
+}
+
+/* MOBILE */
+#mobile .introBtn-mobile {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#mobile .introBtn-mobile img {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 0) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+  .logo img {
+    width: 200px;
+  }
 }
