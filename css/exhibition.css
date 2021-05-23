@@ -1,0 +1,25 @@
+.name {
+    font-size: 50sp;
+}
+
+.institute {
+    font-size: 10sp;
+}
+
+.more {display: none;}
+
+.articles {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.article{
+    width: auto;
+    word-break: break-all;
+}
+.article *{
+}
+
+
+@import '../cards.css';
