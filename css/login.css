@@ -105,7 +105,7 @@ button {
 
 .login_logo p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .login__form {
@@ -125,6 +125,10 @@ button {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.login_row label{
+  font-size: 1.5rem;
+}
+
 .btn {
   border: 3px solid #4133ff8f;
   display: inline-block;
@@ -140,7 +144,7 @@ input[type='radio'].toggle {
 }
 input[type='radio'].toggle + label {
   cursor: pointer;
-  min-width: 60px;
+  min-width: 100px;
   color: #f3f0f0;
 }
 input[type='radio'].toggle + label:hover {
