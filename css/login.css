@@ -68,10 +68,10 @@ button {
 .login_box {
   position: absolute;
   top: 50%;
-  left: 40%;
-  margin-left: -15rem;
-  margin-top: -26.5rem;
-  width: 50rem;
+  left: 50%;
+  margin-left: -23.5rem;
+  margin-top: -30rem;
+  width: 47rem;
   height: 60rem;
 
   overflow: hidden;
