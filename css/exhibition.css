@@ -1,7 +1,7 @@
 
 .main .inner {
     position: relative;
-    width: 100%;
+    min-width: 1920px;
     height: 985px;
     margin: 0 auto;
     background: url('../data/img/exhibition/background.png') left top no-repeat;

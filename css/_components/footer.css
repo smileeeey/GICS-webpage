@@ -1,4 +1,23 @@
 /*footer style*/
-.footer { min-width: 1920px; margin: 0 auto; background: #333; }
-.footer .biz-info { padding: 25px 0 15px; box-sizing: border-box; font-size: 14px; font-weight: 400; color: #fff; text-align: center; line-height: 26px; }
-.footer .copyright { height: 50px; background: #000; font-size: 12px; font-weight: 300; color: #fff; text-align: center; line-height: 50px; }
+.footer {
+    min-width: 1920px;
+    margin: 0 auto;
+    background: #333;
+}
+.footer .biz-info {
+    padding: 25px 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+}
+.footer .copyright {
+    height: 50px;
+    background: #000;
+    font-size: 12px;
+    font-weight: 300; color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
