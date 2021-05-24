@@ -1,11 +1,11 @@
 
 .main .inner {
     position: relative;
-    width: 1920px;
+    width: 100%;
     height: 985px;
     margin: 0 auto;
     background: url('../data/img/exhibition/background.png') left top no-repeat;
-    background-size: 1920px 985px;
+    background-size: 100% 985px;
     overflow: hidden;
 }
 
@@ -77,11 +77,11 @@
 
 .s {
     top: 19%;
-    left: 43%;
+    left: 50%;
     grid-template-columns: repeat(2,1fr);
     z-index: 0;
-    margin-inline: 120px;
 }
 .s img{
     width: 160px;
+    margin-inline: 100px;
 }
