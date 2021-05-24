@@ -24,6 +24,10 @@
   height: 201px;
   transition: 0.5s all ease-out;
 }
+.hd .hd-logout{
+  color: rgb(20, 20, 119);
+}
+
 .hd .hd-menu {
   display: flex;
   align-items: flex-end;
@@ -67,7 +71,7 @@
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 500;
-  color: #114577;
+  color: #000000;
 }
 .hd-blank {
   height: 136px;
