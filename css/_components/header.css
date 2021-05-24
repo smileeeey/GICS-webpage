@@ -106,7 +106,7 @@
 /* NAVIGATION */
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 1fr 1fr;
   /* grid-template-columns: repeat(15, 1fr); */
   align-items: center;
   height: auto;
@@ -156,7 +156,7 @@
 
 .nav-item a:hover { border-bottom-color: #363636; }
 /* .nav-item a span { display: inline-block; margin-left: 5px; padding: 0.5rem 1rem 0; border-radius: 4px; box-sizing: border-box; background: #363636; color: #fff; } */
-.user-info { position: absolute; right: 0; bottom: 40px; padding-right: 7px; box-sizing: border-box; font-size: 14px; font-weight: 500; color: #114577; }
+.user-info { position: absolute; right: 0; bottom: 40px; padding-right: 7px; box-sizing: border-box; font-size: 14px; font-weight: 500; color: #114577; float:right;}
 
 .no-search {
   transform: translate(0);
