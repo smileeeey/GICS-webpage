@@ -16,7 +16,7 @@
     top: -15px;
     transform: translateZ(0);
     transform: translateY(-15px);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.15); */
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
@@ -29,67 +29,59 @@
     width: auto;
     list-style: none;
     justify-self: end;
+    transform:translate(-50%, -50%);
 }
 .company img{
     margin-inline: 20px;
 }
 
 .sdp {
-    width: auto;
-    top: 85%;
+    top: 82%;
     left: 50%;
-    transform:translate(-50%, -50%);
     grid-template-columns: repeat(2,1fr);
-    z-index: 7;
+    z-index: 4;
 }
 .sdp img{
-    width: 250px;
+    width: 270px;
 }
 
 .sd {
-    width: auto;
-    top: 65%;
+    top: 63%;
     left: 50%;
-    transform:translate(-50%, -50%);
     grid-template-columns: repeat(4,1fr);
-    z-index: 6;
+    z-index: 3;
 }
 .sd img{
-    width: 230px;
+    width: 220px;
 }
 
 .d {
-    width: auto;
-    top: 50%;
+    top: 47%;
     left: 50%;
-    transform:translate(-50%, -50%);
-    grid-template-columns: repeat(6,1fr);
-    z-index: 5;
+    grid-template-columns: repeat(5,1fr);
+    z-index: 2;
 }
 .d img{
-    width: 180px;
+    width: 195px;
 }
 
 .g {
-    width: auto;
-    top: 35%;
+    top: 32%;
     left: 50%;
-    transform:translate(-50%, -50%);
     grid-template-columns: repeat(4,1fr);
-    z-index: 4;
+    z-index: 1;
 }
 .g img{
     width: 170px;
 }
 
 .s {
-    width: auto;
-    top: 20%;
-    left: 50%;
-    transform:translate(-50%, -50%);
+    top: 19%;
+    left: 43%;
     grid-template-columns: repeat(2,1fr);
-    z-index: 3;
+    z-index: 0;
+    margin-inline: 120px;
 }
 .s img{
-    width: 150px;
+    width: 160px;
 }
