@@ -120,7 +120,7 @@
   width: 100%;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(6, 1fr);
   justify-self: end;
 }
 
@@ -131,15 +131,13 @@
 .nav-item a {
   width: auto;
   color: #000;
-  font-size: 0.9rem;
-  font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
   padding: 0px 0px 5px;
   border-bottom: 4px solid transparent;
   box-sizing: border-box;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 600 !important;
   color: #363636;
 }
 
@@ -235,6 +233,7 @@
 
   .navbar li a {
       font-size: 1rem;
+      font-weight: 600 !important;
   }
       
   .menu-toggle, .bar {
