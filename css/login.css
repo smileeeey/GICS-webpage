@@ -52,7 +52,6 @@ button {
   background-image: url('../data/img/home/bg_home.png');
   background-size: cover;
   overflow: auto;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .background::before {
   content: '';
