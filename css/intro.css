@@ -15,10 +15,14 @@
   transform:translate(-50%, -50%);
 }
 
+.logo-wrapper{
+  margin-bottom: 10rem;
+}
+
 .logo {
   text-align: center;
   margin: 0px auto;
-  width: 15rem;
+  width: 20rem;
 }
 
 .introBtn a {
@@ -44,6 +48,12 @@
 
 
 @media (max-width: 768px) {
+  .logo-wrapper{
+    margin-bottom: 1rem;
+  }
+  .logo {
+    width: 15rem;
+  }
   .background{
     background-position: center center;
     background-repeat: no-repeat;
