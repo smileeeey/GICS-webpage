@@ -6,7 +6,7 @@ body {
   border: 0;
   padding: 0;
   /* overflow: hidden; */
-  background-image: url('../../img/index/index_bg.jpg');
+  background-image: url('/data/img/intro/bg.png');
   /* min-height: 100%; */
   background-position: center;
   background-size: cover;
@@ -29,6 +29,15 @@ body {
 }
 
 /* PC */
+
+.background {
+  position: relative;
+  height: 100%;
+  background-image: url('../data/img/home/bg_home.png');
+  background-size: cover;
+  overflow: auto;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
 .pc .introBtn-pc {
   text-align: center;
   width: 100%;
