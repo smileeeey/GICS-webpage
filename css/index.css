@@ -1,6 +1,6 @@
 /*======== PC ========*/
 
-/*메인*/
+
 .main .inner {
   position: relative;
   min-width: 1920px;
@@ -11,40 +11,45 @@
   overflow: hidden;
 }
 
-.main-flag{
+/*=== TOP ===*/
+.top-entries{
   position: absolute;
   left: 50%;
   top: 27.2%;
   transform:translate(-50%, -50%);
+
+  display: table; 
 }
 
-.main-flag > .video-object {
-  position: absolute;
-  left: 73.5%;
-  top: 50%;
-  transform:translate(-50%, -50%);
+#main-flag {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.side-flag {
-  display: inline-block;
+#video {
   position: absolute;
   left: 50%;
-  top: 55%;
-  transform:translate(-50%, -50%);
+  top: 30%;
+  z-index: 5;
+}
+
+.side-flag{
+  margin-top: 120px;
+  display: inline-block;
+}
+
+#left-flag{
+  margin-right: 40px;
+}
+#right-flag{
+  margin-left: 40px;
 }
 
 
-#left-flag {
-  position: absolute;
-  right: 22%;
-  top: 10%;
-}
-#right-flag {
-  position: absolute;
-  left: 22%;
-  top: 10%;
-}
 
+
+/*=== MIDDLE ===*/
 .mid-entries {
   width: auto;
   position: absolute;
@@ -64,39 +69,7 @@
 	-webkit-filter: drop-shadow(0px 0px 8rem rgb(251, 255, 0));
 }
 
-
-
-.top-entries{
-  position: absolute;
-  left: 50%;
-  top: 27.2%;
-  transform:translate(-50%, -50%);
-  
-  display: table;
-  
-}
-#mf {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#lf{
-  display: inline-block;
-  margin-right: 30px;
-}
-#rf{
-  display: inline-block;
-  margin-left: 30px;
-}
-
-#video {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  z-index: 5;
-}
-
+/*=== BOTTOM ===*/
 
 /*======== MOBILE ========*/
 @media screen and (max-width: 768px) and (min-width: 0) {
