@@ -28,23 +28,47 @@
 
 <body>
   <div data-include-path="../_components/header_fix.html"></div>
-  
+
   <div class="main">
     <div class="inner">
-      <iframe width="295" height="180" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-      class="video-object"></iframe>
-      
-      <a href="#" class="btn-object btn-object-v1"></a>
-      <a href="#" class="btn-object btn-object-v2"></a>
-      <a href="#" class="btn-object btn-object-v3"></a>
+
+      <div class="top-entries">
+        <div id="left-flag">
+          <img src="../data/img/home/side_flag.png">
+        </div>
+
+        <div class="side-flag" id="main-flag">
+          <img src="../data/img/home/main_flag.png">
+          <iframe id="video" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+        
+        <div class="side-flag" id="right-flag" >
+          <img src="../data/img/home/side_flag.png">
+        </div>
+      </div>
+
+
+      <div class="mid-entries">
+        <a href="#">
+          <img src="../data/img/home/eposter.png" alt="eposter">
+        </a>
+        <a href="#">
+          <img src="../data/img/home/live.png" alt="live">
+        </a>
+        <a href="#">
+          <img src="../data/img/home/exhibition.png" alt="exhibition">
+        </a>
+      </div>
+
     </div>
   </div>
-  
+
   <!-- <div data-include-path="../subpages/banner.html"></div> -->
   <div data-include-path="/_components/footer_pc.html"></div>
-  
+
 </body>
 
 <script src="/js/_libraries/include_html.js"></script>

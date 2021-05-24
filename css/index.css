@@ -1,60 +1,75 @@
 /*======== PC ========*/
 
-/*메인*/
+
 .main .inner {
   position: relative;
-  width: 1920px;
+  min-width: 1920px;
   height: 985px;
   margin: 0 auto;
-  background: url('../data/img/home/bg_main1.png') left top no-repeat;
-  background-size: 1920px 985px;
+  background: url('../data/img/home/bg_home.png') left top no-repeat;
+  background-size: 100% 985px;
   overflow: hidden;
 }
 
-/*영상*/
-.video-object {
+/*=== TOP ===*/
+.top-entries{
   position: absolute;
-  top: 90px;
-  left: 1027px;
+  left: 50%;
+  top: 27.2%;
+  transform:translate(-50%, -50%);
+
+  display: table; 
 }
 
-/*오브젝트*/
-.btn-object {
-  position: absolute;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.btn-object-v1 {
-  top: 369px;
-  left: 371px;
-  width: 414px;
-  height: 318px;
-  background-image: url('../data/img/home/img_object1_off.png');
-}
-.btn-object-v1:hover {
-  background-image: url('../data/img/home/img_object1_on.png');
-}
-.btn-object-v2 {
-  top: 367px;
-  left: 729px;
-  width: 468px;
-  height: 306px;
-  background-image: url('../data/img/home/img_object2_off.png');
-}
-.btn-object-v2:hover {
-  background-image: url('../data/img/home/img_object2_on.png');
-}
-.btn-object-v3 {
-  top: 370px;
-  left: 1136px;
-  width: 414px;
-  height: 317px;
-  background-image: url('../data/img/home/img_object3_off.png');
-}
-.btn-object-v3:hover {
-  background-image: url('../data/img/home/img_object3_on.png');
+#main-flag {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
 }
 
+#video {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 5;
+}
+
+.side-flag{
+  margin-top: 120px;
+  display: inline-block;
+}
+
+#left-flag{
+  margin-right: 40px;
+}
+#right-flag{
+  margin-left: 40px;
+}
+
+
+
+
+/*=== MIDDLE ===*/
+.mid-entries {
+  width: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform:translate(-50%, 50%);
+}
+
+.mid-entries img {
+  margin-inline: -3px;
+}
+.mid-entries img:hover {
+  /* -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80)); */
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+	-webkit-filter: drop-shadow(0px 0px 8rem rgb(251, 255, 0));
+}
+
+/*=== BOTTOM ===*/
 
 /*======== MOBILE ========*/
 @media screen and (max-width: 768px) and (min-width: 0) {

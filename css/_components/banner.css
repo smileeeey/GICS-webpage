@@ -16,15 +16,22 @@ div.banner {
   height: 70px;
   margin-top: 40px;
   /* padding: 0 90px; */
-  background-color: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
   text-align: center;
   font-size: 0;
   line-height: 0;
-  margin-bottom: 40px;
+  top:70%;
+}
+
+@media (max-width: 891px) {
+  div.banner {
+    top:85%;
+  }
 }
 
 div.banner > ul {
+  /* background-color: #fff; */
 }
 
 div.banner > ul:after {
