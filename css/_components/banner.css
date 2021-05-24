@@ -14,19 +14,19 @@ div.banner {
   position: relative;
   width: 100%;
   height: 70px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   /* padding: 0 90px; */
   /* background-color: #fff; */
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
   text-align: center;
   font-size: 0;
   line-height: 0;
-  top:70%;
+  top: 60%;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 768px) {
   div.banner {
-    top:85%;
+    top: 80%;
   }
 }
 
@@ -63,29 +63,3 @@ div.banner img {
   display: inline-block;
   width: 170px;
 }
-
-/* 
-div.banner a.bx-prev,
-div.banner a.bx-next {
-  position: absolute;
-  top: 0;
-  width: 295px;
-  height: 90px;
-  font-size: 0;
-  line-height: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-div.banner a.bx-prev {
-  left: 0;
-  background-image: url('../../img/banner/banner_prev.png');
-}
-
-div.banner a.bx-next {
-  right: 0;
-  background-image: url('../../img/banner/banner_next.png');
-}
-
-div.loginArea div.formArea + div.banner {
-} */
