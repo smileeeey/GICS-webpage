@@ -1,25 +1,95 @@
-.name {
-    font-size: 50sp;
+
+.main .inner {
+    position: relative;
+    width: 1920px;
+    height: 985px;
+    margin: 0 auto;
+    background: url('../data/img/exhibition/background.png') left top no-repeat;
+    background-size: 1920px 985px;
+    overflow: hidden;
 }
 
-.institute {
-    font-size: 10sp;
+.company a{
+    display: block;
+}
+.company a:hover {
+    top: -15px;
+    transform: translateZ(0);
+    transform: translateY(-15px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
 }
 
-.more {display: none;}
-
-.articles {
-    width: 100%;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.article{
+.company {
+    display: grid;
+    position: absolute;
     width: auto;
-    word-break: break-all;
+    list-style: none;
+    justify-self: end;
 }
-.article *{
+.company img{
+    margin-inline: 20px;
 }
 
+.sdp {
+    width: auto;
+    top: 85%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    grid-template-columns: repeat(2,1fr);
+    z-index: 7;
+}
+.sdp img{
+    width: 250px;
+}
 
-@import '../cards.css';
+.sd {
+    width: auto;
+    top: 65%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    grid-template-columns: repeat(4,1fr);
+    z-index: 6;
+}
+.sd img{
+    width: 230px;
+}
+
+.d {
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    grid-template-columns: repeat(6,1fr);
+    z-index: 5;
+}
+.d img{
+    width: 180px;
+}
+
+.g {
+    width: auto;
+    top: 35%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    grid-template-columns: repeat(4,1fr);
+    z-index: 4;
+}
+.g img{
+    width: 170px;
+}
+
+.s {
+    width: auto;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    grid-template-columns: repeat(2,1fr);
+    z-index: 3;
+}
+.s img{
+    width: 150px;
+}
