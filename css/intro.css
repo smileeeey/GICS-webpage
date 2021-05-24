@@ -1,41 +1,24 @@
-body{
-  overflow-y: scroll;
-  overflow-x: scroll;
-}
-
 .background {
   position: relative;
+  width: 100%;
   height: 100%;
   background-image: url('../data/img/intro/bg.png');
-  background-size: cover;
-  overflow: auto;
 }
-/* 
-.logo {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-
-  text-align: center;
-  margin: 0px auto;
-  margin-bottom: 50px;
-}
-
-.logo img {
-  width: 30%;
-} */
 
 .introBtn {
   width: 100%;
   text-align: center;
   margin: 0px auto;
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 50%;
   transform:translate(-50%, -50%);
+}
+
+.logo {
+  text-align: center;
+  margin: 0px auto;
+  width: 15rem;
 }
 
 .introBtn a {
@@ -43,14 +26,8 @@ body{
   margin: 1rem;
 }
 
-.introBtn img {
-  width: 35rem;
-}
-
-@media (max-width: 891px) {
-  .introBtn img {
-    width: 20rem;
-  }
+.introBtn a img {
+  width: 23rem;
 }
 
 .introBtn a:hover {
@@ -62,4 +39,13 @@ body{
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
+}
+
+
+
+@media (max-width: 768px) {
+  .background{
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
