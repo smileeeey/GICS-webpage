@@ -1,21 +1,17 @@
-/* COMMON */
-
-body {
+.background {
+  position: relative;
   width: 100%;
-  height: auto;
-  border: 0;
-  padding: 0;
-  /* overflow: hidden; */
-  background-image: url('/data/img/intro/bg.png');
-  /* min-height: 100%; */
-  background-position: center;
-  background-size: cover;
-  /* opacity: 0.5; */
-
-  filter: alpha(opacity=50);
+  height: 100%;
+  background-image: url('../data/img/intro/bg.png');
+  /* background-size: cover; */
+  z-index: -1;
 }
 
 .logo {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
 
@@ -25,94 +21,35 @@ body {
 }
 
 .logo img {
-  width: 250px;
+  width: 30%;
 }
 
-/* PC */
-
-.background {
-  position: relative;
-  height: 100%;
-  background-image: url('../data/img/home/bg_home.png');
-  background-size: cover;
-  overflow: auto;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-.pc .introBtn-pc {
+.introBtn {
+  width: 100%;
   text-align: center;
-  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform:translate(-50%, -50%);
 }
 
-.pc .introBtn-pc ul {
+.introBtn a {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  list-style: none;
-  width: auto;
-  height: auto;
+  margin: 1rem;
 }
 
-.pc .introBtn-pc li {
-  font-size: 0;
-  content: ' ';
-  margin: 1%;
-  width: 48%;
-  height: auto;
-
-  float: left;
+.introBtn img {
+  width: 23rem;
 }
 
-.pc .introBtn-pc a {
-  display: block;
-}
-
-.pc .introBtn-pc img {
-  width: 100%;
-  height: auto;
-}
-
-.pc .introBtn-pc a {
-  position: relative;
-  transition: 0.35s;
-  top: 0;
-  box-shadow: 0 0 30px 9px rgb(255 255 255 / 10%);
-  zoom: 1;
-  transition-duration: 800ms;
-  transition-timing-function: ease;
-}
-.pc .introBtn-pc a:hover {
-  top: -15px;
+.introBtn a:hover {
+  top: -2rem;
   transform: translateZ(0);
-  transform: translateY(-15px);
+  transform: translateY(-2rem);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
-}
-
-
-
-/*======== MOBILE ========*/
-
-.mobile .introBtn-mobile {
-  width: 100%;
-  text-align: center;
-  margin: 0px auto;
-}
-
-.mobile .introBtn-mobile img {
-  width: 200px;
-}
-
-@media screen and (max-width: 768px) and (min-width: 0) {
-  .logo {
-    width: 100%;
-    text-align: center;
-    margin: 0px auto;
-    margin-bottom: 50px;
-  }
-  .logo img {
-    width: 200px;
-  }
 }
