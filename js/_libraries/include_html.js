@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
           parsed_name = includePath.split('/');
           page_type = parsed_name[parsed_name.length - 2];
           page_name = parsed_name[parsed_name.length - 1].split('.')[0];
-          jsPath = '../js/' + page_type + '/' + page_name + '.js';
+          jsPath = '/gics2021/js/' + page_type + '/' + page_name + '.js';
           includeJs(jsPath);
         }
       };

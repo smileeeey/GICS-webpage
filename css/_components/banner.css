@@ -21,7 +21,7 @@ div.banner {
   text-align: center;
   font-size: 0;
   line-height: 0;
-  top: 60%;
+  top: 65%;
 }
 
 @media (max-width: 768px) {
