@@ -126,7 +126,6 @@
 }
 
 .header .header-menu a {
-  display: block;
   width: 100%;
   border-bottom: 4px solid transparent;
   box-sizing: border-box;
@@ -139,16 +138,18 @@
   border-bottom-color: #363636;
 }
 
-.header .header-user-info {
+.pc.user-info {
   position: absolute;
   right: 0;
-  bottom: calc(2.5rem + .5vw);
   padding-right: 7px;
   box-sizing: border-box;
   font-size: calc(0.5rem + .5vw);
+  color: #000000;  
+}
+
+.user-info{
+  bottom: calc(2.5rem + .5vw);
   font-weight: 500;
-  color: #000000;
-  
 }
 
 .header .header-menu .header-logout{
@@ -199,7 +200,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
 /* Mobile Devices - Phones/Tablets */  
 @media only screen and (max-width: 830px) { 
   /* MOBILE NAVIGATION */       
@@ -214,12 +214,13 @@
       height: calc(100vh - 55px);
       transform: translate(101%);
       text-align: center;
-      overflow: hidden;      
+      overflow: hidden;
   }
 
   .header .header-menu li {
     float: center;
     padding: 15px;
+    display: block;
   }
 
   .header .header-menu li:first-child {
@@ -238,5 +239,6 @@
     
   .mobile-nav {
     transform: translate(0%)!important;
+    
   }
 }

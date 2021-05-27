@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".no-search").show();
+    $(".header-menu").show();
 });
 
 $('.menu-toggle').click(function(){
