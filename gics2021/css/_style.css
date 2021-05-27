@@ -108,7 +108,7 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 768px) and (min-width: 0) {
+@media screen and (max-width: 830px) and (min-width: 0) {
   .pc {
     display: none;
   }
