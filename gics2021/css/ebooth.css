@@ -9,75 +9,81 @@
     background: url('/gics2021/data/img/ebooth/bg.png') left top no-repeat;
     background-size: 100% 985px;
     overflow: hidden;
-  }
+}
 
-  /*=== left side ===*/
+.objects{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform:translate(-50%, 0%);
+
+  max-width: 1100px;
+  width: 100%;
+};
+
+.center{
+  position: relative;
+}
+
+#center_top{
+  width: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 14%;
+  transform:translate(-50%, 0%);
+  z-index: 1;
+}
+
+#center_bottom{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform:translate(-50%, 0%);
+  z-index: 2;
+}
+
 .left_side{
-    position: absolute;
-    left: 18%;
-    top: 33%;
+  float: left;
+  transform:translate(-25%, -10%);
 }
 
-  /*=== center ===*/
-.center_booth{
-    background-color: aqua;
-    position: absolute;
-    left: 50%;
-    top: 58%;
-    transform:translate(-50%, -50%);
-    display: table; 
-  }
-
-  #center_top{
-    position: absolute;
-    left: 42.5%;
-    top:44%;
-  }
-
-  #center_bottom{
-    position: absolute;
-    left: 40.5%;
-    top:67%;
-  }
-
-  /*=== right side ===*/
 .right_side{
-    position: absolute;
-    right: 18%;
-    top: 41.7%;
+  float: right;
+  transform:translate(23%, 10%);
 }
 
-  /*=== buttom ===*/
-  .bottom_button{
-    position: absolute;
-    left: 29%;
-    bottom: 5%;
-    display: grid;
-    place-items: center;
-    color: #43425d;
-  }
+/*=== buttom ===*/
+.bottom_button{
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  display: grid;
+  place-items: center;
+  color: #43425d;
+  transform:translate(-50%, 0%);
+}
 
-  
-  .multi-button {
-    border: 5px solid #43425d;
-  }
-  .multi-button button {
-    background-color: white;
-    border: none;
-    margin: 0;
-    padding: 1em 2em;
-    font-weight: bold;
-    outline: none;
-    font-size: 1.5em;
-    color: #43425d;
-    width: 200px;
-  }
-  .multi-button button:hover {
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .active {
-    background-color: #43425d !important;
-    color: whitesmoke !important;
-  }
+
+.multi-button {
+  border: 5px solid #43425d;
+}
+.multi-button button {
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 1em 2em;
+  font-weight: bold;
+  outline: none;
+  font-size: 1.5em;
+  color: #43425d;
+  width: 200px;
+}
+.multi-button button:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.active {
+  background-color: #43425d !important;
+  color: whitesmoke !important;
+}
