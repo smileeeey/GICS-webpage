@@ -38,7 +38,7 @@
   top: -2rem;
   transform: translateZ(0);
   transform: translateY(-2rem);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.15); */
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;

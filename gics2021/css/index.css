@@ -37,8 +37,8 @@
 
 #video {
   position: absolute;
-  left: 50%;
-  top: 35%;
+  left: 50.5%;
+  top: 33.5%;
   z-index: 5;
 }
 
@@ -94,6 +94,7 @@
 .bottom-entries .award {
   float: right;
 }
+
 
 .bottom-entries .icon{
   position: absolute;
