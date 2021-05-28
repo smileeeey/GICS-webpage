@@ -19,6 +19,8 @@
 
   <!-- page CSS File -->
   <link rel="stylesheet" href="/gics2021/css/ebooth.css">
+  <link rel="stylesheet" href="/gics2021/css/ebooth-modal.css">
+  <link rel="stylesheet" href="/gics2021/css/modal.css">
 
   <!-- Vendor JS File -->
   <script src="/gics2021/js/_libraries/jquery.min.js"></script>
@@ -62,7 +64,7 @@
 
       <div class="bottom_button">
         <div class="multi-button">
-          <button class="active">BROCHURES</button>
+          <a href="#brochures-modal"><button class="active">BROCHURES</button></a>
           <button>BROCHURES</button>
           <button>VIDEO</button>
           <button>STAMP EVENT</button>
@@ -71,9 +73,129 @@
 
     </div>
   </div>
+
+  <div id="brochures-modal" class="modal-window">
+    <div class="tabs" style="background-color: rgb(205, 206, 201);width: 70%;height: 60%;">
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-1">COMPANY</label></div>
+        <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+        <div class="modal-body" id="tab2-1-context">
+          <div class="modal-body-left">
+            <div>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+              설명<br>
+            </div> 
+          </div>
+          <div class="modal-body-right"></div>
+          <!-- <div class="modal-body-left" style="background-color: pink;float: left;">
+            <div style="left: 50%;"><img src="/gics2021/data/img/carrot.png" alt="로고" style="width: 20%;margin: 5%;margin-left: 40%;"></div>
+          </div>-->
+          <!-- <div class="modal-body-right" style="background-color: purple;float: right;">
+            <div><img src="/gics2021/data/img/carrot.png" alt="로고" style="width: 50%;margin: 10%;margin-left: 25%;"></div>
+            <a href="http://google.com"><div style="width:30%;background-color: #114577;text-align: center;margin-left: 40%;">웹사이트 주소</div></a>
+          </div> -->
+          
+        </div>
+
+      </div>
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-2">BROCURES</label></div>
+        <input id="tab2-2" name="tabs-two" type="radio">
+        <div class="modal-body" id="tab2-2-context">
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          vkk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          vkk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+          kk<br>
+        </div>
+      </div>
+
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-3">VIDEO</label></div>
+        <input id="tab2-3" name="tabs-two" type="radio">
+        <div class="modal-body" id="tab2-3-context">
+          <div class="modal-body-left">
+            <iframe src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
+            title="YouTube video player" frameborder="0"            
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          </div>
+          <div class="modal-body-right">
+            abc
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-4">STAMP EVENT</label></div>
+        <input id="tab2-4" name="tabs-two" type="radio">
+        <div class="modal-body" id="tab2-4-context">
+          <h4>Tab One</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   
-  <div data-include-path="/gics2021/_components/footer_pc.html"></div>
+  <div data-include-path="/gics2021/_components/footer_fix.html"></div>
 </body>
 
+<script src="/gics2021/js/_components/ebooth_modal.js"></script>
 <script src="/gics2021/js/_libraries/include_html.js"></script>
 </html>

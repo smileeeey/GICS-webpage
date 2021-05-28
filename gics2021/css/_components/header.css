@@ -11,6 +11,7 @@
   box-sizing: border-box;
   background: #fff;
   font-family: 'GmarketSans', sans-serif !important;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
 .hd {
   position: relative;
@@ -94,6 +95,7 @@
   z-index: 30;
   height: 100px;
   font-family: 'GmarketSans', sans-serif !important;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
 .navbar {
   position: relative;
@@ -132,7 +134,7 @@
   width: 100%;
   border-bottom: 4px solid transparent;
   box-sizing: border-box;
-  font-size: calc(0.8rem + .5vw);
+  font-size: calc(0.5rem + .5vw);
   font-weight: 600;
   color: #363636;
 }
@@ -146,12 +148,12 @@
   right: 0;
   padding-right: 7px;
   box-sizing: border-box;
-  font-size: calc(0.5rem + .5vw);
+  font-size: calc(0.3rem + .5vw);
   color: #000000;  
 }
 
 .user-info{
-  bottom: calc(2.5rem + .5vw);
+  bottom: calc(1.5rem + .5vw);
   font-weight: 500;
 }
 
@@ -232,7 +234,7 @@
   
   .header .header-menu li a {
     width: auto;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600 !important;
   }
   .header .header-menu a.mobile{
@@ -240,7 +242,7 @@
   }
 
   .header-user-info{
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: 600 !important;
   }
       

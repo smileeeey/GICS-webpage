@@ -2,6 +2,23 @@ body{
     text-align: center;
 }
 
+
+body  *::-webkit-scrollbar {
+  width: 10px;
+}
+body  *::-webkit-scrollbar-thumb {
+  background-color: rgb(59, 59, 224);;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+body  *::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+
 .top-entries {
     width: 70vw;
     max-width: 110vw;
@@ -159,7 +176,7 @@ body{
 
 .bottom-entries .table-header{
     width: 100%;
-    background-color: blue;
+    background-color: rgb(59, 59, 224);
     text-align: left;
 }
 
@@ -170,13 +187,13 @@ body{
 }
 
 .bottom-entries .posters-header{
-    height: calc(4rem + .5vh);
-    font-size: 1rem;
+  font-size: 1rem;
+  height: calc(5rem + .5vh);
 }
 
 .bottom-entries .favorites-header{
-    font-size: 1.5rem;
-    height: calc(4rem + .5vh);
+    font-size: 1rem;
+    height: calc(2rem + .5vh);
 }
 
 .bottom-entries .poster{
@@ -227,7 +244,7 @@ body{
 }
 
 .blog-card .description {
-  padding: 1rem;
+  padding: 0.3rem 0.5rem 0.3rem;
   background: #fff;
   position: relative;
   z-index: 1;
@@ -239,10 +256,10 @@ body{
 .blog-card .description h1 {
   line-height: 1;
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 .blog-card .description h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   text-transform: uppercase;
   color: #a2a2a2;
@@ -250,12 +267,13 @@ body{
 }
 .blog-card p {
   position: relative;
-  margin: 1rem 0 0;
+  /* margin: 1rem 0 0; */
+  font-size: 0.7rem;
   overflow: hidden;
   max-height: 40px;
 }
 .blog-card p:first-of-type {
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
 }
 .blog-card p:first-of-type:before {
   content: "";
@@ -288,7 +306,7 @@ body{
   }
 
 .star {
-    font-size: 3rem;
+    font-size: 1.5rem;
     position: absolute;
     color: rgb(189, 189, 189);
     left: 5px;
@@ -297,7 +315,7 @@ body{
 }
 
 .star.active {
-    color: #114577;   
+    color: #e0c214;   
 }
 
 
