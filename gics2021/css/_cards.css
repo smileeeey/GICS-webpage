@@ -82,14 +82,28 @@ div.card {
   width: 300px;
   z-index: 1;
 }
+
+
+div.card div.card-image .best{
+  position: absolute;
+  left: 80.3%;
+  top: -5.5%;
+}
+
+div.card div.card-image .best img {
+  width: 70px;
+}
+
 card__image {
   max-width: 300px;
 }
+
 div.card .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
 }
+
 div.card div.card-title {
   background: #ffffff;
   padding: 6px 15px 10px;
@@ -122,6 +136,16 @@ div.card div.card-title a.toggle-info span.right {
   left: 14px;
   transform: rotate(-45deg);
 }
+
+div.card div.card-title span.ep-num {
+  display: inline-block;
+  padding: 4px 6px 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #114577;
+  color: #fff;
+}
+
 div.card div.card-title h2 {
   font-size: 24px;
   font-weight: 700;

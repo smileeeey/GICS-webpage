@@ -4,10 +4,10 @@
 .main .inner {
   position: relative;
   min-width: 1920px;
-  height: 985px;
+  height: 820px;
   margin: 0 auto;
   background: url('/gics2021/data/img/index/bg_home.png') left top no-repeat;
-  background-size: 100% 985px;
+  background-size: 100% 820px;
   overflow: hidden;
 }
 
