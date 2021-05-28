@@ -1,11 +1,141 @@
 
-
-.best{
-    position: absolute;
-    left: 80.3%;
-    top: -5.5%;
+.top-entries {
+    margin-top: 50px;
+    height: 5%;
 }
 
-.best img {
-    width: 70px;
+.top-entries .ep-num{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #114577;
+    color: #fff;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-left: 1%;
+}
+
+.top-entries .like-button{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: rgb(136, 136, 136);
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top-entries .like-button.liked{
+    background: red;
+}
+
+.top-entries #like-icon{
+    margin-right: 5px;
+}
+.top-entries #like-count{
+    width: 30px;
+}
+
+/* .mid-entries *{
+    transition:translate(0, 50%)
+} */
+
+.mid-entries {
+    width: 100%;
+    height: 20%;
+}
+
+.mid-entries .description {
+    display: inline-block;
+    overflow: hidden;
+    word-break: normal;
+    width: 66%;
+    vertical-align: middle;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.mid-entries .description .content{
+    font-size: 1.1rem;
+    color: #13518a;
+}
+
+.mid-entries .description .author{
+    float: right;
+    margin-right: 20px;
+}
+
+.mid-entries .description .author h2, .author h3{
+    display: inline-block;
+}
+.mid-entries .description .author h2{
+    font-weight: 550;
+    color: #175792
+}
+
+.mid-entries .description .author h3{
+    font-weight: 500;
+    color: #979797;
+}
+
+.mid-entries .content-media {
+    display: inline-block;
+    margin: 1%;
+    width: 29%;
+}
+
+.mid-entries .content-media > * {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mid-entries img{
+    width: 80px;
+}
+
+.bottom-entries {
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bottom-entries > div{
+    display: inline-block;
+}
+
+.bottom-entries .favorites{
+    width: 25%;
+    height: 70%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.bottom-entries .poster{
+    width: 65%;
+    height: 100%;
+    overflow-y: scroll;
+    border: 12px solid grey;
+}
+
+.mid-entries .content-media > *{
+    margin: 5px;
+}
+
+@media only screen and (max-width: 830px) { 
+    /* MOBILE NAVIGATION */       
+    .mid-entries .description{
+        width: 100%;
+    }
+    .mid-entries .content-media{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .bottom-entries {
+        display: block;
+    }
 }

@@ -1,9 +1,17 @@
 /*footer style*/
 .footer {
-    min-width: 1920px;
     margin: 0 auto;
     background: #333;
 }
+
+.fix.footer {
+    min-width: 1920px;
+}
+.responsive.footer{
+    width: 100%;
+    min-height: 50px;
+}
+
 .footer .biz-info {
     padding: 25px 0 15px;
     box-sizing: border-box;
