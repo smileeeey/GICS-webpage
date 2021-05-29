@@ -24,7 +24,7 @@
     text-align: center;
   }
   
-  /***** 1th PAGE *****/ 
+  /***** 1st PAGE *****/ 
   /* company modal */
   
   .company-logo{
@@ -46,7 +46,7 @@
     padding-right: 20%;
   }
 
-  /***** 2th PAGE *****/ 
+  /***** 2nd PAGE *****/ 
   /* brochures modal */
 
   .brochures-content{
@@ -76,17 +76,15 @@
     width: 100%;
   }
   
-  /***** 3th PAGE *****/  
+  /***** 3rd PAGE *****/  
   /* video modal */
 
   .video-grid-container{
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-rows: auto;
     height: 100%;
   }
   .video-grid-item {
-  font-size: 30px;
-  text-align: center;
   }
   
   /***** 4th PAGE *****/  
@@ -99,7 +97,7 @@
     display: inline-block;
     grid-template-columns: 4fr, 1fr;
     width: 100%;
-    padding: 0 0 1% 0;  
+    padding: 0 0 1% 0;
     vertical-align: middle;
   }
   .prize-description{

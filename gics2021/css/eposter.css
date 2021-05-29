@@ -54,6 +54,7 @@ body  *::-webkit-scrollbar-track {
     font-size: 1.1rem;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .top-entries .like-button.liked{
@@ -157,20 +158,23 @@ body  *::-webkit-scrollbar-track {
     overflow-y: auto;
 }
 
-.bottom-entries .posters{
+.bottom-entries .wrapper {
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+  border-left: 4px solid grey;
+  border-right: 4px solid grey;  
+}
+
+.bottom-entries .posters-wrapper{
     height: 60%;
 }
 
-.bottom-entries .favorites{
+.bottom-entries .favorites-wrapper{
     margin-top: 10px;
     height: 30%;
 }
 
 .bottom-entries .list{
-    border-bottom: 4px solid grey;
-    border-left: 4px solid grey;
-    border-right: 4px solid grey;
-    
     overflow-y: auto;
 }
 
