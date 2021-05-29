@@ -1,0 +1,35 @@
+.wrapper{
+    margin: 10px;
+  }
+  .left-content{
+    /* background-color: aqua; */
+    float: left;
+    width: 70%;
+    text-align: center;
+    padding-top: 5%;
+  }
+  .sidebar{
+    background-color: rgb(195, 207, 248);
+    float: right;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5%;
+  }
+  .logo{
+    width: 20%;
+  }
+  #video{
+    width: 80%;
+    height: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .company-btn{
+    display: inline;
+    background-color: #114577;
+    font: normal 900 30px  white;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+  }

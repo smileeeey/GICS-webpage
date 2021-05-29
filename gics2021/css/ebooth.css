@@ -56,18 +56,20 @@
 .bottom_button{
   position: absolute;
   left: 50%;
-  bottom: 5%;
-  display: grid;
+  bottom: 2%;
+  
   place-items: center;
   color: #43425d;
   transform:translate(-50%, 0%);
 }
 
-
 .multi-button {
   border: 5px solid #43425d;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 .multi-button button {
+  border: 5px solid #43425d;
   background-color: white;
   border: none;
   margin: 0;
@@ -76,12 +78,14 @@
   outline: none;
   font-size: 1.5em;
   color: #43425d;
-  width: 200px;
+  width: 300px;
 }
-.multi-button button:hover {
+
+.multi-button button:hover{
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
 
 .active {
   background-color: #43425d !important;

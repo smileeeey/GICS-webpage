@@ -108,28 +108,33 @@ margin-left: -100%; } */
 
 .modal-body{
   height: 83%;
+  width: 100%;
+  vertical-align: top;
+}
+.modal-2body{
+  height: 83%;
+  width: 100%;
   vertical-align: top;
 }
 
 .modal-body-left{
-  width: 70%;
   display: inline-block;
+  width: 65%;
 }
 
 .modal-body-right{
-  width: 25%;
   display: inline-block;
+  width: 30%;
 }
 
 #tab2-2-context{
   overflow-y: auto;
 }
 
+/***** 3th PAGE *****/
 
-#tab2-3-context iframe{
-  margin: 3px;
-  width: auto;
-  display: block;
-}
 
-@import url("/gics2021/css/_components/ebooth-stampevent.css");
+
+
+
+

@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link href="/gics2021/data/img/favicon.png" rel="icon" />
 
-  
+
   <!-- Vendor CSS Files -->
 
   <!-- Main CSS File -->
@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="/gics2021/css/ebooth.css">
   <link rel="stylesheet" href="/gics2021/css/ebooth-modal.css">
   <link rel="stylesheet" href="/gics2021/css/modal.css">
+
+  <link rel="stylesheet" href="/gics2021/css/_components/ebooth-video.css">
+  <link rel="stylesheet" href="/gics2021/css/_components/ebooth-stampevent.css">
 
   <!-- Vendor JS File -->
   <script src="/gics2021/js/_libraries/jquery.min.js"></script>
@@ -39,8 +42,8 @@
 <body>
   <!-- ======= Header ======= -->
   <div data-include-path="/gics2021/_components/header_fix.html"></div>
-  
-  
+
+
   <div class="main">
     <div class="inner">
 
@@ -91,7 +94,7 @@
               설명<br>
               설명<br>
               설명<br>
-            </div> 
+            </div>
           </div>
           <div class="modal-body-right"></div>
           <!-- <div class="modal-body-left" style="background-color: pink;float: left;">
@@ -101,7 +104,7 @@
             <div><img src="/gics2021/data/img/carrot.png" alt="로고" style="width: 50%;margin: 10%;margin-left: 25%;"></div>
             <a href="http://google.com"><div style="width:30%;background-color: #114577;text-align: center;margin-left: 40%;">웹사이트 주소</div></a>
           </div> -->
-          
+
         </div>
 
       </div>
@@ -165,17 +168,39 @@
         <div class="modal-title"><label for="tab2-3">VIDEO</label></div>
         <input id="tab2-3" name="tabs-two" type="radio">
         <div class="modal-body" id="tab2-3-context">
-          <div class="modal-body-left">
-            <iframe src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
-            title="YouTube video player" frameborder="0"            
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
 
-          </div>
-          <div class="modal-body-right">
-            abc
-          </div>
+          <div class="wrapper" style="background-color: aqua;">
+            <div class="left-content">
+              <iframe width="800px" height="500px"
+                src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
 
+            <div class="sidebar">
+              <div class="video-grid-container">
+                <div class="video-grid-item">
+                  <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="video-grid-item">
+                  <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -184,18 +209,85 @@
         <div class="modal-title"><label for="tab2-4">STAMP EVENT</label></div>
         <input id="tab2-4" name="tabs-two" type="radio">
         <div class="modal-body" id="tab2-4-context">
-          <h4>Tab One</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat id velit quis vestibulum. Nam id orci eu urna mollis porttitor. Nunc nisi ante, gravida at velit eu, aliquet sodales dui. Sed laoreet condimentum nisi a egestas.</p><p>Donec interdum ante ut enim consequat, quis varius nulla dapibus. Vivamus mollis fermentum augue a varius. Vestibulum in sapien at lectus gravida lobortis vulputate sed metus. Duis scelerisque justo et maximus efficitur. Donec eu eleifend quam. Curabitur aliquet commodo sapien eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum vel aliquet nunc, finibus posuere lorem. Suspendisse consectetur volutpat est ut ornare.</p>
+
+          <div class="prize">
+            <div class="prize-description">
+              <div class="top-text">
+                <p class="text-subject">경품 당첨의 기회를 놓치지 마세요!</p>
+                <p>부스 방문이벤트에 참가하시면 개인 정보(성함,E-mail)가 자동으로 각 회사 담당자에게 전달 됩니다.</p>
+              </div>
+
+              <div class="detail">
+                <div id="howto"><span class="design-span">참여방법</span></div>
+                <div id="howto-detail">
+                  <div id="text2">
+                    - 15개 이상 부스 방문 후 스탬프 획득 시 커피쿠폰 전원 증정<br>
+                    - 20개 이상 부스 방문 후 스탬프 획득 시 1,2,3등의 경품 추첨 대상자가 됩니다!
+                  </div>
+                  <div id="text3">
+                    *경품추첨은 행사종료 이후 진행되며 개별적으로 연락 드릴 예정입니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="prize-picture">
+              <div class="prize-picture-grid">
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logos">
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp stamp-active">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
   </div>
 
-  
+
   <div data-include-path="/gics2021/_components/footer_fix.html"></div>
 </body>
 
 <script src="/gics2021/js/_components/ebooth_modal.js"></script>
 <script src="/gics2021/js/_libraries/include_html.js"></script>
+
 </html>

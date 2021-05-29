@@ -1,0 +1,53 @@
+#tab2-3-context{
+  width: 100%;
+}
+
+/* padding-bottom값은 16:9(56.25%), 4:3(75%)로 설정 */
+/* #tab2-3-context-left{
+  position: relative;
+  padding-bottom: 75%;
+  padding-top: 25px;
+  height: 0;
+}
+#tab2-3-context-left iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+}
+ */
+
+
+#tab2-3-context-left{
+  float: left;
+  width: 70%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#tab2-3-context-right{
+  background-color: rgb(195, 207, 248);
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  float: right;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item .video{
+    width: 40px;
+    height: 20px;
+}

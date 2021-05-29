@@ -1,146 +1,114 @@
-/* *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    width: 100%;
-    height: 100%;
-} */
+  
+/***** 4th PAGE *****/
 
-.wrapper{
-    margin: 10px;
-    text-align: center;
-    background-color: aqua;
-}
-
-.text{
-    margin: 30px;
-    background-color: gold;
-    float: left;
-    width: 60%;
-    height: 100%;
-    
-}
-.picture{
-    margin: 30px;
-    background-color: violet;
-    float: right;
-    width: 40%;
-    height: 100%;
-}
-
-
-
-/* DESCRIPTION AREA */
-.prize{
-    background-color: rgb(251, 255, 0);
+  #tab2-4-context{
+    overflow-y: auto;
+  }
+  
+  /* DESCRIPTION AREA */
+  .prize{
+    background-color: rgb(115, 140, 248);
     
     display: inline-block;
     grid-template-columns: 4fr, 1fr;
-    width: 80%;
-    height: 35%;
-    vertical-align: top;
-}
-.prize-description{
+    width: 100%;
+    padding: 0 0 1% 0;  
+    vertical-align: middle;
+  }
+  .prize-description{
     width: 70%;
+    height: 100%;
     float: left;
     margin-left: 2%;
     /* display: inline-block; */
-}
-
-.prize-description .text-subject{
+    text-align: center;
+  }
+  
+  .prize-description .text-subject{
     font-weight: 600;
     font-size: 1.7rem;
-}
-
-.prize-description .detail{
+  }
+  
+  .prize-description .detail{
     margin-top: 0.9rem;
-}
-
-.prize-description .detail > div{
+  }
+  
+  .prize-description .detail > div{
     display: inline-block;
     vertical-align: middle;
-}
-
-.design-span{
+  }
+  
+  .design-span{
     color: white;
     /* font-weight: 900; */
-    background: rgb(0, 4, 255);
-    padding: 5px 10px 5px 10px;
+    background: #114577;
+    padding: 5px 10px 3px 10px;
     border-radius: 10px;
     font-size: 1rem;
-    white-space:nowrap;
-}
-
-.prize-description .detail #howto-detail{
+    white-space: nowrap;
+  }
+  
+  .prize-description .detail #howto-detail{
     text-align: left;
     margin-left: 5px;
-}
-
-.prize-description .detail #howto-detail #text3{
+  }
+  
+  .prize-description .detail #howto-detail #text3{
     font-weight: 600;
-}
-
-.prize-picture{
-    width: 23%;
-    float: left;
-    /* display: inline-block; */
-    line-height: 100%;
-    vertical-align: top;
+  }
+  
+  .prize-picture-grid{
+    text-align: center; 
+    margin-top: 2%;
     margin-right: 2%;
-}
-.prize-picture-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-.prize-picture-grid > div{
+  }
+  .prize-picture-grid > div{
     margin: 5px;
-}
-.prize-picture img{
+  }
+  .prize-picture img{
     width: 100%;
     border-radius: 50%;
     margin-bottom: 5px;
-}
-
-
-/* LOGO/STAMP AREA */
-
-.logos{
-    background-color: greenyellow;
+  }
+  
+  
+  /* LOGO/STAMP AREA */
+  
+  .logos{
+    background-color: rgb(228, 228, 228);
     display: inline-block;
-    width: 80%;
+    width: 100%;
     height: 65%;
-}
-
-.grid-container{
+  }
+  
+  .grid-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-}
-
-.grid-item {
+  }
+  
+  .grid-item {
     text-align: center;
     position: relative;
     margin: 5px;
-}
-
-.in-grid-item{
+  }
+  
+  .in-grid-item{
     position: absolute;
     left: 0;
     top: 0;
-}
-.grid-item .logo img{
+  }
+  .grid-item .logo img{
     width: 100%;
-}
-
-.grid-item .stamp {
+  }
+  
+  .grid-item .stamp {
     width: 0%;
-}
-.grid-item .stamp.active{
+  }
+  .grid-item .stamp.stamp-active{
     width: 100%;
-}
-.grid-item .stamp img{
+  }
+  .grid-item .stamp img{
     width: 50%;
-}
-
-
-
+  }
