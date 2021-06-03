@@ -44,28 +44,29 @@
   }
 
 .company img{
-    margin-inline: 20px;
+    margin-inline: -20px;
 }
 
+
 .sdp {
-    top: 82%;
+    top: 84%;
     left: 50%;
     grid-template-columns: repeat(2,1fr);
     z-index: 4;
 }
 .sdp img{
-    width: 300px;
-    margin-inline: 50px;
+    width: 400px;
+    /* margin-inline: 50px; */
 }
 
 .sd_1 {
-    top: 60.5%;
+    top: 60%;
     left: 50%;
     grid-template-columns: repeat(4,1fr);
     z-index: 3;
 }
 .sd_1 img{
-    width: 230px;
+    width: 310px;
 }
 
 .sd_2 {
@@ -75,7 +76,7 @@
     z-index: 2;
 }
 .sd_2 img{
-    width: 220px;
+    width: 280px;
 }
 
 .d {
@@ -85,18 +86,17 @@
     z-index: 1;
 }
 .d img{
-    width: 160px;
+    width: 230px;
 }
 
 .p {
-    top: 20%;
+    top: 19%;
     left: 50%;
     grid-template-columns: repeat(2,1fr);
     z-index: 0;
 }
 .p img{
-    width: 140px;
-    height: 115px;
+    width: 190px;
     margin-inline: 100px;
 }
 
