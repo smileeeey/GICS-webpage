@@ -4,10 +4,10 @@
 .main .inner {
     position: relative;
     min-width: 1920px;
-    height: 985px;
+    height: 90vh;
     margin: 0 auto;
     background: url('/gics2021/data/img/ebooth/bg.png') left top no-repeat;
-    background-size: 100% 985px;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 
@@ -29,7 +29,7 @@
   width: auto;
   position: absolute;
   left: 50%;
-  bottom: 14%;
+  bottom: 25%;
   transform:translate(-50%, 0%);
   z-index: 1;
 }
@@ -37,26 +37,26 @@
 #center_bottom{
   position: absolute;
   left: 50%;
-  bottom: 0%;
+  bottom: 15%;
   transform:translate(-50%, 0%);
   z-index: 2;
 }
 
 .left_side{
   float: left;
-  transform:translate(-25%, -10%);
+  transform:translate(-75%, -12%);
 }
 
 .right_side{
   float: right;
-  transform:translate(23%, 10%);
+  transform:translate(75%, 7%);
 }
 
 /*=== buttom ===*/
 .bottom_button{
   position: absolute;
   left: 50%;
-  bottom: 2%;
+  bottom: 5%;
   
   place-items: center;
   color: #43425d;

@@ -2,10 +2,10 @@
 .main .inner {
     position: relative;
     min-width: 1920px;
-    height: 985px;
+    height: 90vh;
     margin: 0 auto;
     background: url('/gics2021/data/img/exhibition/background.png') left top no-repeat;
-    background-size: 100% 985px;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 

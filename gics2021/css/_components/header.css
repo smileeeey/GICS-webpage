@@ -6,6 +6,7 @@
   position: relative;
   z-index: 10;
   min-width: 1920px;
+  height: 10vh;
   margin: 0 auto;
   border-bottom: 1px solid #dcdcdc;
   box-sizing: border-box;
@@ -16,7 +17,7 @@
 .hd {
   position: relative;
   width: 1320px;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
   transition: 0.5s all ease-out;
 }
@@ -93,7 +94,7 @@
   top: 0;
   background-color: #fff;
   z-index: 30;
-  height: 100px;
+  height: 10vh;
   font-family: 'GmarketSans', sans-serif !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }

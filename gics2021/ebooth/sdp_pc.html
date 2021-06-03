@@ -20,6 +20,8 @@
   <!-- page CSS File -->
   <link rel="stylesheet" href="/gics2021/css/ebooth.css">
   <link rel="stylesheet" href="/gics2021/css/ebooth-modal.css">
+  <link rel="stylesheet" href="/gics2021/css/modal.css">
+
   <link rel="stylesheet" href="/gics2021/css/_components/ebooth-modal-tab.css">
 
   <!-- Vendor JS File -->
@@ -62,238 +64,252 @@
 
       <div class="bottom_button">
         <div class="multi-button">
-          <a class="btn" href="#modal-company"><button class="active">COMPANY</button></a>
-          <a class="btn" href="#modal-brochures"><button>BROCHURES</button></a>
-          <a class="btn" href="#modal-video"><button>VIDEO</button></a>
-          <a class="btn" href="#modal-stampevent"><button>STAMP EVENT</button></a>
+          <a class="btn" id="tab2-1-btn" href="#brochures-modal"><button class="active">COMPANY</button></a>
+          <a class="btn" id="tab2-2-btn" href="#brochures-modal"><button>BROCHURES</button></a>
+          <a class="btn" id="tab2-3-btn" href="#brochures-modal"><button>VIDEO</button></a>
+          <a class="btn" id="tab2-4-btn" href="#brochures-modal"><button>STAMP EVENT</button></a>
         </div>
       </div>
 
     </div>
   </div>
 
-  <div id="modal-company" class="modal-window">
-    <a href="#" title="Close" class="modal-close">Close</a>
-    <div>
-      <div class="menu">
-        <table class="menu-table">
-          <tr>
-            <td width="25%"><a href="#modal-company">Company</a></td>
-            <td width="25%"><a href="#modal-brochures">BROCHURES</a></td>
-            <td width="25%"><a href="#modal-video">VIDEO</a></td>
-            <td width="25%"><a href="#modal-stampevent">STAMP EVENT</a></td>
-          </tr>
-        </table>
-      </div>
+  <div id="brochures-modal" class="modal-window">
+    <div class="close_button"><a href="#" id="close_btn">&#10006;</a></div>
+    <div class="tabs" style="background-color: rgb(205, 206, 201);width: 70%;height: 60%;">
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-1">COMPANY</label></div>
+        <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+        <div class="modal-body" id="tab2-1-context">
+          <div class="left-content">
+            <div style="height: 10%;"></div>
+            <img class="company-logo" src="/gics2021/data/img/img_logo1.png" alt="">
 
-      <div class="wrapper">
-        <div class="left-content">
-          <div style="height: 10%;"></div>
-          <img class="company-logo" src="/gics2021/data/img/img_logo1.png" alt="">
-
-          <div>
-            <br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>
-          </div>
-        </div>
-
-        <div class="sidebar">
-          <div style="height: 10%;"></div>
-          <iframe id="company-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          <div>
-            <a href="http://google.com">
-              <div class="company-btn">website</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="modal-brochures" class="modal-window">
-    <a href="#" title="Close" class="modal-close">Close</a>
-    <div>
-      <div class="menu">
-        <table class="menu-table">
-          <tr>
-            <td width="25%"><a href="#modal-company">Company</a></td>
-            <td width="25%"><a href="#modal-brochures">BROCHURES</a></td>
-            <td width="25%"><a href="#modal-video">VIDEO</a></td>
-            <td width="25%"><a href="#modal-stampevent">STAMP EVENT</a></td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="content">
-
-        <div class="brochures-grid-container">
-          <div class="brochures-grid-item">
-            <div style="display: inline-block;"><iframe class="brochures-preview"
-                src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
-                href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
-                <div class="brochures-download-btn">PDF Download</div>
-              </a></div>
-          </div>
-          <div class="brochures-grid-item">
-            <div style="display: inline-block;"><iframe class="brochures-preview"
-                src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
-                href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
-                <div class="brochures-download-btn">PDF Download</div>
-              </a></div>
-          </div>
-          <div class="brochures-grid-item">
-            <div style="display: inline-block;"><iframe class="brochures-preview"
-                src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
-                href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
-                <div class="brochures-download-btn">PDF Download</div>
-              </a></div>
-          </div>
-          <div class="brochures-grid-item">
-            <div style="display: inline-block;"><iframe class="brochures-preview"
-                src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
-                href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
-                <div class="brochures-download-btn">PDF Download</div>
-              </a></div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-  <div id="modal-video" class="modal-window">
-    <div>
-      <div class="menu">
-        <table class="menu-table">
-          <tr>
-            <td width="25%"><a href="#modal-company">Company</a></td>
-            <td width="25%"><a href="#modal-brochures">BROCHURES</a></td>
-            <td width="25%"><a href="#modal-video">VIDEO</a></td>
-            <td width="25%"><a href="#modal-stampevent">STAMP EVENT</a></td>
-          </tr>
-        </table>
-      </div>
-      <a href="#" title="Close" class="modal-close">Close</a>
-      <div class="wrapper" style="background-color: aqua;">
-        <div class="left-content">
-          <iframe width="800px" height="500px"
-            src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="sidebar">
-          <div class="video-grid-container">
-            <div class="video-grid-item">
-              <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
+            <div>
+              <br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>회사소개<br>
             </div>
-            <div class="video-grid-item">
-              <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
+          </div>
+
+          <div class="sidebar">
+            <div style="height: 10%;"></div>
+            <iframe id="company-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div>
+              <a href="http://google.com">
+                <div class="company-btn">website</div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-2">BROCURES</label></div>
+        <input id="tab2-2" name="tabs-two" type="radio">
+        <div class="modal-body y_scroll" id="tab2-2-context">
+          <div class="brochures-grid-container">
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
+            </div>
+            <div class="brochures-grid-item">
+              <div style="display: inline-block;"><iframe class="brochures-preview"
+                  src="/gics2021/data/poster/eposter-example.pdf"></iframe><a
+                  href="/gics2021/data/poster/eposter-example.pdf" download target="_blank">
+                  <div class="brochures-download-btn">PDF Download</div>
+                </a></div>
             </div>
 
-
-
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-  <div id="modal-stampevent" class="modal-window">
-    <div>
-      <div class="menu">
-        <table class="menu-table">
-          <tr>
-            <td width="25%"><a href="#modal-company">Company</a></td>
-            <td width="25%"><a href="#modal-brochures">BROCHURES</a></td>
-            <td width="25%"><a href="#modal-video">VIDEO</a></td>
-            <td width="25%"><a href="#modal-stampevent">STAMP EVENT</a></td>
-          </tr>
-        </table>
-      </div>
-      <a href="#" title="Close" class="modal-close">Close</a>
-      <div class="wrapper">
-        <div class="stamp-prize">
-          <div class="prize-description">
-            <div class="top-text">
-              <p class="text-subject">경품 당첨의 기회를 놓치지 마세요!</p>
-              <p>부스 방문이벤트에 참가하시면 개인 정보(성함,E-mail)가 자동으로 각 회사 담당자에게 전달 됩니다.</p>
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-3">VIDEO</label></div>
+        <input id="tab2-3" name="tabs-two" type="radio">
+        <div class="modal-body " id="tab2-3-context">
+          <div class="left-content">
+            <iframe width="700px" height="400px"
+              src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+  
+          <div class="sidebar y_scroll">
+            <div class="video-grid-container">
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-grid-item">
+                <iframe class="video-video" src="https://www.youtube.com/embed/pEuwMEeh2ac?mute=1&?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+  
+  
             </div>
+          </div>
 
-            <div class="detail">
-              <div id="howto"><span class="design-span">참여방법</span></div>
-              <div id="howto-detail">
-                <div id="text2">
-                  - 15개 이상 부스 방문 후 스탬프 획득 시 커피쿠폰 전원 증정<br>
-                  - 20개 이상 부스 방문 후 스탬프 획득 시 1,2,3등의 경품 추첨 대상자가 됩니다!
+        </div>
+      </div>
+
+      <div class="tab-2">
+        <div class="modal-title"><label for="tab2-4">STAMP EVENT</label></div>
+        <input id="tab2-4" name="tabs-two" type="radio">
+        <div class="modal-body y_scroll" id="tab2-4-context">
+
+          <div class="prize">
+            <div class="prize-description">
+              <div class="top-text">
+                <p class="text-subject">경품 당첨의 기회를 놓치지 마세요!</p>
+                <p>부스 방문이벤트에 참가하시면 개인 정보(성함,E-mail)가 자동으로 각 회사 담당자에게 전달 됩니다.</p>
+              </div>
+
+              <div class="detail">
+                <div id="howto"><span class="design-span">참여방법</span></div>
+                <div id="howto-detail">
+                  <div id="text2">
+                    - 15개 이상 부스 방문 후 스탬프 획득 시 커피쿠폰 전원 증정<br>
+                    - 20개 이상 부스 방문 후 스탬프 획득 시 1,2,3등의 경품 추첨 대상자가 됩니다!
+                  </div>
+                  <div id="text3">
+                    *경품추첨은 행사종료 이후 진행되며 개별적으로 연락 드릴 예정입니다.
+                  </div>
                 </div>
-                <div id="text3">
-                  *경품추첨은 행사종료 이후 진행되며 개별적으로 연락 드릴 예정입니다.
+              </div>
+            </div>
+
+            <div class="prize-picture">
+              <div class="prize-picture-grid">
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+                <div>
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                  <span class="design-span">N등 -명</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logos">
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp stamp-active">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="in-grid-item logo">
+                  <img src="/gics2021/data/img/img_logo1.png" alt="로고">
+                </div>
+                <div class="in-grid-item stamp">
+                  <img src="/gics2021/data/img/carrot.png" alt="로고">
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="prize-picture">
-            <div class="prize-picture-grid">
-              <div>
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-                <span class="design-span">N등 -명</span>
-              </div>
-              <div>
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-                <span class="design-span">N등 -명</span>
-              </div>
-              <div>
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-                <span class="design-span">N등 -명</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="stamp-logos">
-          <div class="stamp-grid-container">
-            <div class="stamp-grid-item">
-              <div class="stamp-in-grid-item stamp-logo">
-                <img src="/gics2021/data/img/img_logo1.png" alt="로고">
-              </div>
-              <div class="stamp-in-grid-item stamp">
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-              </div>
-            </div>
-            <div class="stamp-grid-item">
-              <div class="stamp-in-grid-item stamp-logo">
-                <img src="/gics2021/data/img/img_logo1.png" alt="로고">
-              </div>
-              <div class="stamp-in-grid-item stamp">
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-              </div>
-            </div>
-            <div class="stamp-grid-item">
-              <div class="stamp-in-grid-item stamp-logo">
-                <img src="/gics2021/data/img/img_logo1.png" alt="로고">
-              </div>
-              <div class="stamp-in-grid-item stamp">
-                <img src="/gics2021/data/img/carrot.png" alt="로고">
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </div>
+
   </div>
+
 
   <div data-include-path="/gics2021/_components/footer_fix.html"></div>
 </body>
