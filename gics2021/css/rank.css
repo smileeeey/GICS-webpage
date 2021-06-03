@@ -2,129 +2,129 @@
     position: relative;
     min-width: 1920px;
     height: 90vh;
+    /* width: 100vw; */
     margin: 0 auto;
-    background: url('/gics2021/data/img/exhibition/background.png') left top no-repeat;
+    background: url('/gics2021/data/img/exhibition/rank_bg.png') left top no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
 }
 
-#slideshow {
-	margin: 0 auto;
-	padding-top: 200px;
-	height: 600px;
-	width: 100%;
-	box-sizing: border-box;
+.company a{
+  display: block;
+}
+.company a:hover {
+  top: -15px;
+  transform: translateZ(0);
+  transform: translateY(-15px);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.15); */
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
-.slideshow-title {
-	font-family: 'Allerta Stencil';
-	font-size: 62px;
-	color: #fff;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 25%;
-	letter-spacing: 3px;
-	font-weight: 300;
+.company {
+  display: grid;
+  position: absolute;
+  width: auto;
+  list-style: none;
+  justify-self: end;
+  transform:translate(-50%, -50%);
 }
 
-.sub-heading {
-	padding-top: 50px;
-	font-size: 18px;
-} .sub-heading-two {
-	font-size: 15px;
-} .sub-heading-three {
-	font-size: 13px;
-} .sub-heading-four {
-	font-size: 11px;
-} .sub-heading-five {
-	font-size: 9px;
-} .sub-heading-six {
-	font-size: 7px;
-} .sub-heading-seven {
-	font-size: 5px;
-} .sub-heading-eight {
-	font-size: 3px;
-} .sub-heading-nine {
-	font-size: 1px;
+
+.item a:hover {
+  top: -2rem;
+  transform: translateZ(0);
+  transform: translateY(-1rem);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.15); */
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
-.entire-content {
-	margin: auto;
-	width: 190px;
-	perspective: 1000px;
-	position: relative;
-	padding-top: 80px;
+.company img{
+  margin-inline: -70px;
 }
 
-.content-carrousel {
-	width: 100%;
-	position: absolute;
-	float: right;
-	animation: rotar 15s infinite linear;
-	transform-style: preserve-3d;
+
+.sdp {
+  top: 61%;
+  left: 55%;
+  grid-template-columns: repeat(2,1fr);
+  z-index: 4;
+}
+.sdp img{
+  width: 630px;
+  /* margin-inline: 50px; */
 }
 
-.content-carrousel:hover {
-	animation-play-state: paused;
-	cursor: pointer;
+.sd_1 {
+  top: 30%;
+  left: 53%;
+  grid-template-columns: repeat(4,1fr);
+  z-index: 3;
+}
+.sd_1 img{
+  width: 470px;
 }
 
-.content-carrousel figure {
-	width: 100%;
-	height: 120px;
-	border: 1px solid #3b444b;
-	overflow: hidden;
-	position: absolute;
+.sd_2 {
+  top: 65%;
+  left: 53%;
+  grid-template-columns: repeat(5,1fr);
+  z-index: 2;
+}
+.sd_2 img{
+  width: 470px;
 }
 
-.content-carrousel figure:nth-child(1) {
-	transform: rotateY(0deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(2) {
-	transform: rotateY(40deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(3) {
-	transform: rotateY(80deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(4) {
-	transform: rotateY(120deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(5) {
-	transform: rotateY(160deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(6) {
-	transform: rotateY(200deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(7) {
-	transform: rotateY(240deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(8) {
-	transform: rotateY(280deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(9) {
-	transform: rotateY(320deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(10) {
-	transform: rotateY(360deg) translateZ(300px); 
-} 
-
-.shadow {
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px #000;
-    border-radius: 1px;
+.d_1 {
+  top: 30%;
+  left: 53%;
+  grid-template-columns: repeat(2,1fr);
+  z-index: 1;
+}
+.d_1 img{
+  width: 500px;
 }
 
-.content-carrousel img {
-	image-rendering: auto;
-	transition: all 300ms;
-	width: 100%;
-	height: 100%;
+.d_2 {
+  top: 65%;
+  left: 53%;
+  grid-template-columns: repeat(2,1fr);
+  z-index: 1;
+}
+.d_2 img{
+  width: 500px;
 }
 
-.content-carrousel img:hover {
-	transform: scale(1.2);
-	transition: all 300ms;
+.p {
+  top: 61%;
+  left: 55%;
+  grid-template-columns: repeat(2,1fr);
+  z-index: 0;
+}
+.p img{
+  width: 700px;
 }
 
-@keyframes rotar {
-	from {
-		transform: rotateY(0deg);
-	} to {
-		transform: rotateY(360deg);
-	}
-}
 
+
+
+
+.logo-container{
+  position: absolute;
+  left: 28.5%;
+  top: -12%;
+  transform:translate(-50%, 0%);
+
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+    grid-template-columns: auto auto;
+}
 
 
 /* button to select rank */
@@ -132,29 +132,29 @@
 .bottom_button{
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom: 4%;
     
     place-items: center;
-    color: #43425d;
+    color: #114577;
     transform:translate(-50%, 0%);
   }
   
   .multi-button {
-    border: 5px solid #43425d;
+    border: 5px solid #114577;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
   .multi-button button {
-    border: 5px solid #43425d;
+    border: 5px solid #114577;
     background-color: white;
     border: none;
     margin: 0;
-    padding: 1em 2em;
+    padding: 1em 0.5em;
     font-weight: bold;
     outline: none;
-    font-size: 1.5em;
-    color: #43425d;
-    width: 300px;
+    font-size: 1.4em;
+    color: #114577;
+    width: 250px;
   }
   
   .multi-button button:hover{
@@ -165,6 +165,6 @@
   
   
   .active {
-    background-color: #43425d !important;
+    background-color: #114577 !important;
     color: whitesmoke !important;
   }
