@@ -1,0 +1,20 @@
+.content{
+    text-align: center;
+}
+
+.top-blank{
+    height: 10vh;
+}
+
+.title{
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 10vh;
+    margin-right: 35vw;
+}
+
+.content-img{
+    margin-bottom: 10vh;
+}
