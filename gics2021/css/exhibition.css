@@ -99,3 +99,65 @@
     height: 115px;
     margin-inline: 100px;
 }
+
+
+
+#rank3d {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    perspective: 1500px;
+    margin-top: 15rem;
+  }
+  
+  div#cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  div#cube img {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+  
+  div#cube {
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  div#cube img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  img#front {
+    transform: rotateY(0deg) translateZ(100px);
+  }
+  img#back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  img#bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  img#left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  img#right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  img#top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  div#cube {
+    transform: rotateX(-15deg) rotateY(20deg) rotateZ(3deg);
+    transition: transform 2s ease-in-out;
+  }
+  
+  div#cube:hover {
+    transform: rotateX(10deg) rotateY(-215deg) rotateZ(-0deg);
+  }
