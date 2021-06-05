@@ -94,7 +94,7 @@
   top: 0;
   background-color: #fff;
   z-index: 30;
-  height: 10vh;
+  height: 7vh;
   font-family: 'GmarketSans', sans-serif !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
@@ -109,6 +109,7 @@
   position: absolute;
   left: 6.85%;
   z-index: 31;
+  height: 9vh;
 }
 
 .header .header-menu {
