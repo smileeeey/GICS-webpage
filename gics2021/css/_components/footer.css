@@ -2,30 +2,22 @@
 .footer {
     margin: 0 auto;
     background: #333;
-}
-
-.fix.footer {
-    min-width: 1920px;
-}
-.responsive.footer{
     width: 100%;
-    min-height: 50px;
 }
 
 .footer .biz-info {
-    padding: 25px 0 15px;
+    padding: 0.5vh 0 0.1vh;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: calc(0.5rem + .5vw);
     font-weight: 400;
     color: #fff;
     text-align: center;
-    line-height: 26px;
+    line-height: 3vh;
 }
 .footer .copyright {
-    height: 50px;
     background: #000;
-    font-size: 12px;
+    font-size: calc(0.4rem + .5vw);
     font-weight: 300; color: #fff;
     text-align: center;
-    line-height: 50px;
+    line-height: 5vh;
 }
