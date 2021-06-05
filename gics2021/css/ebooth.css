@@ -3,26 +3,35 @@
 
 .main .inner {
     position: relative;
-    min-width: 1920px;
     height: 90vh;
     margin: 0 auto;
     background: url('/gics2021/data/img/ebooth/bg.png') left top no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
+    text-align: center;
 }
-
+/* 
 .objects{
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform:translate(-50%, 0%);
+  width: 100%;
+}; */
+
+.center{
   position: absolute;
   left: 50%;
   bottom: 10%;
   transform:translate(-50%, 0%);
 
-  max-width: 1100px;
+  display: inline-block;
+  z-index: 1;
+  width: 95vw;
+  max-width: 115vh;
+}
+.center img{
   width: 100%;
-};
-
-.center{
-  position: relative;
 }
 
 #center_top{
@@ -31,7 +40,7 @@
   left: 50%;
   bottom: 25%;
   transform:translate(-50%, 0%);
-  z-index: 1;
+  z-index: 2;
 }
 
 #center_bottom{
@@ -39,7 +48,7 @@
   left: 50%;
   bottom: 15%;
   transform:translate(-50%, 0%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .left_side{
@@ -53,38 +62,74 @@
 }
 
 /*=== buttom ===*/
-.bottom_button{
+/* .bottom_button{
   position: absolute;
   left: 50%;
-  bottom: 5%;
-  
-  place-items: center;
+  bottom: 2%;
+  display: inline-block;
   color: #43425d;
   transform:translate(-50%, 0%);
 }
 
 .multi-button {
-  border: 5px solid #43425d;
+  border: 3px solid #43425d;
+  width: 60vw;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-.multi-button button {
-  border: 5px solid #43425d;
+  .multi-button button {
   background-color: white;
-  border: none;
-  margin: 0;
-  padding: 1em 2em;
+  padding: 1.5vh 1.6vw;
   font-weight: bold;
-  outline: none;
-  font-size: 1.5em;
+  font-size: 1vw;
   color: #43425d;
-  width: 300px;
 }
 
 .multi-button button:hover{
   cursor: pointer;
   transition: 0.2s ease-in-out;
   background-color: rgb(211, 211, 15);
+}
+
+
+.active {
+  background-color: #43425d !important;
+  color: whitesmoke !important;
+} */
+
+
+.bottom_button{
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  display: inline-block;
+  color: #43425d;
+  transform:translate(-50%, 0%);
+}
+
+.multi-button {
+  border: 3px solid #43425d;
+  display: grid;
+  width: 60vw;
+  grid-template-columns: auto auto auto auto;
+}
+
+.multi-button div {
+  background-color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  color: #43425d;
+}
+
+
+.multi-button div:hover{
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(207, 207, 24);
+}
+.multi-button a{
+  padding: 1.5vh;
+  display: block;
 }
 
 
