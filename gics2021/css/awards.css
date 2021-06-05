@@ -1,20 +1,44 @@
-.content{
+.main-content{
+    display: block;
+    margin-top: 7vh;
     text-align: center;
+    width: 100%;
+    height: 83vh;
 }
 
-.top-blank{
-    height: 10vh;
+.content{
+    display: inline-block;
+    text-align: left;
 }
+
 
 .title{
     display: block;
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 10vh;
-    margin-right: 35vw;
+    line-height: calc(5rem + .2vw);
 }
 
-.content-img{
-    margin-bottom: 10vh;
+.title *{
+    vertical-align: middle;
+    /* transition: all 0.4s ease-in-out; */
+}
+
+.title img{
+    width: calc(1.2rem + .5vw);
+    margin-right: 1%;
+}
+
+.title span{
+    font-size: calc(1.2rem + .2vw);
+    font-weight: 900;
+}
+
+.award{
+    width: 60vw;
+    margin-bottom: 3vh;
+    /* transition: all 0.4s ease-in-out; */
+    max-width: 83vh;
+}
+
+.award img{
+    width: 100%;
 }
