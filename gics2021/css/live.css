@@ -1,49 +1,44 @@
 .content{
-    position: relative;
-    min-width: 1920px;
-    height: 90vh;
-    /* width: 100vw; */
+    display: block;
+    height: 80vh;
     margin: 0 auto;
     background-size: 100% 100%;
     overflow: hidden;
+    text-align: center;
+    margin-top: 10vh;
 }
 
 
 /* button to select rank */
 
 .bottom_button{
-    position: absolute;
-    left: 50%;
-    top: 8%;
+    display: inline-block;
     
-    place-items: center;
     color: #114577;
-    transform:translate(-50%, 0%);
   }
   
   .multi-button {
-    border: 5px solid #114577;
+    border: 2px solid #114577;
     display: grid;
+    width: 60vw;
     grid-template-columns: auto auto auto auto auto;
   }
-  .multi-button button {
-    border: 5px solid #114577;
+  
+  .multi-button div {
     background-color: white;
-    border: none;
-    margin: 0;
-    padding: 1em 0.5em;
+    padding: 1.5vh 3vw;
     font-weight: bold;
-    outline: none;
-    font-size: 1.4em;
+    font-size: 1vw;
     color: #114577;
-    width: 250px;
   }
   
-  .multi-button button:hover{
+
+  .multi-button div:hover{
     cursor: pointer;
     transition: 0.2s ease-in-out;
     background-color: rgb(207, 207, 24);
   }
+
   
   
   .active {
@@ -53,7 +48,11 @@
 
 
   .video{
-    display: block;
-    text-align: center;
-    margin-top: 20vh;
+    display: inline-block;
+    margin-top: 6vh;
+  }
+
+  #video{
+    width: 60vw;
+    height: 60vh;
   }
