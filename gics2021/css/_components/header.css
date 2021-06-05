@@ -75,7 +75,7 @@
   position: absolute;
   right: 2%;
   box-sizing: border-box;
-  font-size: calc(0.3rem + .8vw);
+  font-size: calc(0.3rem + .5vw);
   color: #000000; 
 }
 
