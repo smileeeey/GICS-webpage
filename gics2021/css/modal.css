@@ -2,7 +2,7 @@ body  *::-webkit-scrollbar {
   width: 10px;
 }
 body  *::-webkit-scrollbar-thumb {
-  background-color: rgb(59, 59, 224);;
+  background-color: #114577;
   border-radius: 10px;
   background-clip: padding-box;
   border: 2px solid transparent;
@@ -30,7 +30,7 @@ body  *::-webkit-scrollbar-track {
   cursor: pointer;
   display: block;
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1em;
   padding: 2rem 0;
   text-align: center;
