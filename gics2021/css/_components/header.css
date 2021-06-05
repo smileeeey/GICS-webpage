@@ -9,6 +9,7 @@
   z-index: 1000;
   height: 10vw;
   max-height: 10vh;
+  min-height: 80px;
   font-family: 'GmarketSans', sans-serif !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
@@ -24,6 +25,7 @@
   left: 6.85%;
   z-index: 10001;
   height: 11vw;
+  min-height: 95px;
   max-height: 11vh;
 }
 
@@ -56,13 +58,17 @@
   width: 100%;
   border-bottom: 4px solid transparent;
   box-sizing: border-box;
-  font-size: calc(0.4rem + .9vw);
+  font-size: calc(0.3rem + .9vw);
   font-weight: 600;
   color: #363636;
 }
 
 .header .header-menu a:hover {
   border-bottom-color: #363636;
+}
+
+.header .header-menu a.active-header {
+  font-size: calc(0.6rem + .9vw);
 }
 
 .pc.user-info {
