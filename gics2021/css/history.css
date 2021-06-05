@@ -28,15 +28,16 @@
 }
 
 .title span{
-    font-size: calc(1.2rem + .2vw);
+    font-size: calc(1rem + .2vw);
     font-weight: 900;
 }
 
 .history{
+    display: block;
     width: 60vw;
     margin-bottom: 3vh;
     /* transition: all 0.4s ease-in-out; */
-    max-width: 75vh;
+    max-width: 71vh;
 }
 
 .history img{
