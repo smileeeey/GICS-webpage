@@ -1,26 +1,24 @@
-.content{
+.main-content{
+    display: block;
+    margin-top: 10vh;
     text-align: center;
 }
 
-.top-blank{
-    height: 10vh;
+.content{
+    display: inline-block;
+    text-align: left;
 }
-
-.main-content{
-
-    /* position: relative; */
-    /* width: 80vw; */
-    height: auto;
-}
-
 .title{
     display: block;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 3vh;
-    margin-right: 27vw;
-    /* text-align: left; */
+    line-height: 4rem;
+}
+.title *{
+    vertical-align: middle;
+}
+.title img{
+    margin-right: 10px;
 }
 
 .content-img{
