@@ -23,7 +23,7 @@
 .header .header-logo {
   position: absolute;
   left: 6.85%;
-  z-index: 1001;
+  z-index: 1002;
   height: 11vw;
   min-height: 6rem;
   max-height: 11vh;
@@ -52,6 +52,7 @@
 }
 .header .header-menu li.mobile{
   display: none;
+  margin-right: 0;
 }
 
 .header .header-menu a {
@@ -104,6 +105,7 @@
   transform: translate(0,-50%);
   justify-self: end;
   display: none;
+  z-index: 1002;
 }
 
 .menu-toggle .bar{
@@ -142,13 +144,12 @@
 @media only screen and (max-width: 830px) { 
   /* MOBILE NAVIGATION */
   
-  .header{
+  /* .header{
     min-height: 10vh;
-
   }
   .header .header-logo{
     min-height: 11vh;
-  }
+  } */
 
   .header .header-menu {
       display: flex;
@@ -162,11 +163,13 @@
       /* height: calc(100vh - 55px); */
       transform: translate(103%);
       text-align: center;
-      overflow: hidden;
+      overflow-y: scroll;
+      z-index: 1001;
   }
   .header .header-menu li {
     /* padding: 15px; */
     margin-bottom: 1.2vh;
+    margin-right: 0;
   }
   .header .header-menu li.mobile{
     display: inline-block;
@@ -178,11 +181,11 @@
   
   .header .header-menu li a {
     width: auto;
-    font-size: 1.1rem;
+    font-size: calc(0.7rem + min(.4vw, .4vh));
     font-weight: 600 !important;
   }
   .header .header-menu a.active-header {
-    font-size: 1.8rem;
+    font-size: calc(1.5rem + min(.4vw, .4vh));
   }
 
   

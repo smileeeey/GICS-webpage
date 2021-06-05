@@ -8,16 +8,17 @@
 .footer .biz-info {
     padding: 0.5vh 0 0.1vh;
     box-sizing: border-box;
-    font-size: calc(0.5rem + .5vw);
+    font-size: calc(0.2rem + min(.5vw, .5vh));
     font-weight: 400;
     color: #fff;
     text-align: center;
-    line-height: 3vh;
+    line-height: min(3vw, 3vh);
 }
 .footer .copyright {
     background: #000;
-    font-size: calc(0.4rem + .5vw);
-    font-weight: 300; color: #fff;
+    font-size: calc(0.4rem + min(.5vw, .5vh));
+    font-weight: 300;
+    color: #fff;
     text-align: center;
-    line-height: 5vh;
+    line-height: min(5vw, 5vh);
 }
