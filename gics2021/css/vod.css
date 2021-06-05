@@ -40,3 +40,9 @@
 .content-img img{
     width: 100%;
 }
+
+@media screen and (max-width: 830px) and (min-width: 0) {
+    .content-img{
+        width: 90vw;
+    }
+}
