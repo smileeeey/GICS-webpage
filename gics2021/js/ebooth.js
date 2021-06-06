@@ -37,6 +37,8 @@ function areaClickEvent(type){
     var tabid = "tab2-1";
   }else if (type.includes("brochure")){
     var tabid = "tab2-2";
+  }else if (type.includes("video")){
+    var tabid = "tab2-3";
   }else{
     alert("Error");
   }
