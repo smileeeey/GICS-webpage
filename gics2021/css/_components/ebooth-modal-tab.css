@@ -64,12 +64,12 @@
 
   .brochures-grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 
   .brochures-grid-item {
     padding: 8px;
-    font-size: calc(1rem + min(.5vw, .5vh));
+    font-size: calc(.5rem + min(.8vw, .8vh));
     text-align: center;
     z-index: 12;
   }
@@ -78,11 +78,14 @@
   }
 
   .brochures-download-btn{
+    vertical-align: middle;
+    line-height: calc(1.2rem + min(.8vw, .8vh));
+    margin-top: -7px;
     background-color: #114577;
-    margin-top: 5px;
     color: #fff;
-    font-weight: 900;
+    font-weight: 500;
   }
+
   .brochures-preview{
     width: 100%;
   }

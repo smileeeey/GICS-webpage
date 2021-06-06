@@ -13,6 +13,25 @@ body  *::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 5px white;
 }
 
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s; 
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .tabs {
   display: block;
   display: -webkit-flex;
@@ -53,6 +72,7 @@ body  *::-webkit-scrollbar-track {
 
 .modal-title{
   background-color: #114577;
+  overflow: hidden;
 }
 .tabs [class^="tab"] [type="radio"],
 .tabs [class*=" tab"] [type="radio"] {

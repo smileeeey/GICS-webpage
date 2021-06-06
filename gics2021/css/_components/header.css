@@ -9,7 +9,7 @@
   z-index: 1000;
   height: 10vw;
   max-height: 10vh;
-  min-height: 5rem;
+  min-height: 4rem;
   font-family: 'GmarketSans', sans-serif !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
@@ -71,6 +71,7 @@
 
 .header .header-menu a.active-header {
   font-size: calc(1rem + min(.2vw, .2vh));
+  border-bottom-color: #363636;
 }
 
 .pc.user-info {
