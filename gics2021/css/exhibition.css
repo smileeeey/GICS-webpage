@@ -1,12 +1,12 @@
 
 .main .inner {
     position: relative;
-    min-width: 1920px;
     height: 90vh;
     margin: 0 auto;
     background: url('/gics2021/data/img/exhibition/background.png') left top no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
+    text-align: center;
 }
 
 .company a{
@@ -26,7 +26,7 @@
 .company {
     display: grid;
     position: absolute;
-    width: auto;
+    /* width: 80vw; */
     list-style: none;
     justify-self: end;
     transform:translate(-50%, -50%);
@@ -45,10 +45,12 @@
 
 .company img{
     margin-inline: -20px;
+    width: 10%;
 }
 
 
 .sdp {
+  width: 50vw;
     top: 84%;
     left: 50%;
     grid-template-columns: repeat(2,1fr);
@@ -60,9 +62,10 @@
 }
 
 .sd_1 {
+  width: 70vw;
     top: 60%;
     left: 50%;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     z-index: 3;
 }
 .sd_1 img{
@@ -70,9 +73,10 @@
 }
 
 .sd_2 {
+  width: 80vw;
     top: 44%;
     left: 50%;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
     z-index: 2;
 }
 .sd_2 img{
@@ -80,6 +84,7 @@
 }
 
 .d {
+  width: 50vw;
     top: 30%;
     left: 50%;
     grid-template-columns: repeat(4,1fr);
@@ -90,6 +95,7 @@
 }
 
 .p {
+  width: 30vw;
     top: 19%;
     left: 50%;
     grid-template-columns: repeat(2,1fr);
