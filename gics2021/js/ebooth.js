@@ -5,33 +5,37 @@ $(document).ready(function () {
     $(this).siblings().removeClass('active');
 
     tabid = this.firstChild.id.split('-').slice(0,2).join('-');
-    console.log(tabid)
-
-    $('.modal-title').css({"background-color": "#114577"});
-    $('.modal-title label').css({"color":"#fff"});
-    $('#'+tabid).prev().css({"background-color": "#d2deec"});
-    $('#'+tabid).prev().children('label').css({"color":"#114577"});
-
-    document.getElementById(tabid).checked = true;
-  });
-
-  $("#close_btn").click(function(){
-    // $("body").removeClass("not_scroll");
+    ready_modal(tabid);
   });
 
   $(".tabs input").click(function () {
-    btnid = this.id + "-btn"
-    active_btn = document.getElementById(btnid);
-
-    $('.modal-title').css({"background-color": "#114577"});
-    $('.modal-title label').css({"color":"#fff"});
-    $(this).prev().css({"background-color": "#d2deec"});
-    $(this).prev().children('label').css({"color":"#114577"});
-
-    sel = '#'+btnid
-    $('.button').parent().removeClass('active');
-    $(sel).parent().toggleClass("active")
+    ready_modal(this.id);
   })
 
 });
 
+function ready_modal(tabid){
+  $('.modal-title').css({"background-color": "#114577"});
+  $('.modal-title label').css({"color":"#fff"});
+
+  $('#'+tabid).prev().css({"background-color": "#d2deec"});
+  $('#'+tabid).prev().children('label').css({"color":"#114577"});
+
+  $('.button').parent().removeClass('active');
+  $('#'+tabid+"-btn").parent().toggleClass("active")
+
+  document.getElementById(tabid).checked = true;
+}
+
+function areaClickEvent(type){
+  if(type == "company"){
+    var tabid = "tab2-1";
+  }else if (type.includes("brochure")){
+    var tabid = "tab2-2";
+  }else{
+    alert("Error");
+  }
+  
+  ready_modal(tabid);
+  window.open(window.location.pathname+'#brochures-modal', '_self');
+}

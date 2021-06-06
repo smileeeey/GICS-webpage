@@ -137,3 +137,7 @@
   background-color: #43425d !important;
   color: whitesmoke !important;
 }
+
+.img-map area{
+  cursor: pointer;
+}
