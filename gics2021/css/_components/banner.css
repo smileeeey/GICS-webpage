@@ -21,13 +21,8 @@ div.banner {
   text-align: center;
   font-size: 0;
   line-height: 0;
-  top: 75%;
-}
-
-@media (max-width: 768px) {
-  div.banner {
-    top: 80%;
-  }
+  bottom: -10%;
+  display: block;
 }
 
 div.banner > ul {

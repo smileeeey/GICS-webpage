@@ -163,7 +163,7 @@
       /* height: calc(100vh - 55px); */
       transform: translate(103%);
       text-align: center;
-      overflow-y: scroll;
+      overflow-y: auto;
       z-index: 1001;
   }
   .header .header-menu li {
