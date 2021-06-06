@@ -52,8 +52,8 @@
 .sdp {
   /* top: 65%; */
   bottom: 14%;
-  left: 52%;
-  transform:translate(-50%, 0%);
+  left: 50%;
+  transform:translate(-40%, 0%);
   grid-template-columns: repeat(2,1fr);
   z-index: 4;
 }
@@ -64,8 +64,8 @@
 
 .sd_1 {
   bottom: 52%;
-  left: 52%;
-  transform:translate(-50%, 0%);
+  left: 50%;
+  transform:translate(-45%, 0%);
   grid-template-columns: repeat(5,1fr);
   z-index: 3;
 }
@@ -76,8 +76,8 @@
 
 .sd_2 {
   bottom: 17%;
-  left: 52%;
-  transform:translate(-50%, 0%);
+  left: 50%;
+  transform:translate(-47%, 0%);
   grid-template-columns: repeat(6,1fr);
   z-index: 2;
 }
@@ -87,39 +87,39 @@
 }
 
 .d_1 {
-  width: 50vw;
-  max-width: 80vh;
-  top: 30%;
-  left: 52%;
+  bottom: 52%;
+  left: 50%;
+  transform:translate(-40%, 0%);
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
 .d_1 img{
-  width: 100%;
+  width: 40vw;
+  max-width: 50vh;
 }
 
 .d_2 {
-  width: 50vw;
-  max-width: 80vh;
-  top: 65%;
-  left: 52%;
+  bottom: 17%;
+  left: 50%;
+  transform:translate(-40%, 0%);
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
 .d_2 img{
-  width: 100%;
+  width: 40vw;
+  max-width: 50vh;
 }
 
 .p {
-  width: 80vw;
-  max-width: 80vh;
-  top: 61%;
-  left: 52%;
+  bottom: 14%;
+  left: 50%;
+  transform:translate(-40%, 0%);
   grid-template-columns: repeat(2,1fr);
   z-index: 0;
 }
 .p img{
-  width: 100%;
+  width: 40vw;
+  max-width: 60vh;
 }
 
 
