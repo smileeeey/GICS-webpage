@@ -44,48 +44,53 @@
 }
 
 .company img{
-  /* margin-inline: -70px; */
+  margin-left: max(-3vw, -3vh);
+  margin-right: max(-3vw, -3vh);
 }
 
 
 .sdp {
-  width: 80vw;
-  top: 61%;
-  left: 55%;
+  /* top: 65%; */
+  bottom: 14%;
+  left: 52%;
+  transform:translate(-50%, 0%);
   grid-template-columns: repeat(2,1fr);
   z-index: 4;
 }
 .sdp img{
-  width: 100%;
-  /* margin-inline: 50px; */
+  width: 40vw;
+  max-width: 60vh;
 }
 
 .sd_1 {
-  width: 80vw;
-  top: 30%;
-  left: 50%;
+  bottom: 52%;
+  left: 52%;
+  transform:translate(-50%, 0%);
   grid-template-columns: repeat(5,1fr);
   z-index: 3;
 }
 .sd_1 img{
-  width: 130%;
+  width: 20vw;
+  max-width: 40vh;
 }
 
 .sd_2 {
-  width: 95vw;
-  top: 65%;
-  left: 50%;
+  bottom: 17%;
+  left: 52%;
+  transform:translate(-50%, 0%);
   grid-template-columns: repeat(6,1fr);
   z-index: 2;
 }
 .sd_2 img{
-  width: 130%;
+  width: 20vw;
+  max-width: 40vh;
 }
 
 .d_1 {
   width: 50vw;
+  max-width: 80vh;
   top: 30%;
-  left: 55%;
+  left: 52%;
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
@@ -95,8 +100,9 @@
 
 .d_2 {
   width: 50vw;
+  max-width: 80vh;
   top: 65%;
-  left: 55%;
+  left: 52%;
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
@@ -106,8 +112,9 @@
 
 .p {
   width: 80vw;
+  max-width: 80vh;
   top: 61%;
-  left: 55%;
+  left: 52%;
   grid-template-columns: repeat(2,1fr);
   z-index: 0;
 }
