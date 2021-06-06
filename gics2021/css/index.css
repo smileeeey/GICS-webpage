@@ -117,7 +117,7 @@
 .bottom-entries *{
   vertical-align: bottom;
 }
-.bottom-entries div{
+.bottom-entries > div{
   display: inline-block;
 }
 
@@ -137,6 +137,7 @@
 
 .bottom-entry.info{
   float: left;
+  width: 18%;
 }
 
 .bottom-entry.info .icon{
