@@ -1,3 +1,3 @@
 function go_ebooth(type){
-    window.open('/gics2021/ebooth/'+type+'_pc.html', '_self');
+    window.open('/gics2021/ebooth/'+type+'.html', '_self');
 }
