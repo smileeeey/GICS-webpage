@@ -17,6 +17,10 @@
     text-align: center;
   }
 
+  .video-left-container{
+    width: 60vw;
+  }
+
   .sidebar{
     background-color: #d2deec;
     float: right;
