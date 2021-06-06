@@ -1,11 +1,11 @@
 .content{
     display: block;
-    height: 80vh;
+    height: 83vh;
     margin: 0 auto;
     background-size: 100% 100%;
     overflow: hidden;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 
@@ -13,23 +13,27 @@
 
 .bottom_button{
     display: inline-block;
-    
+    margin-left:4vw;
+    margin-right:4vw;
     color: #114577;
+    text-align: center;
+    max-width: 79vh;
   }
   
   .multi-button {
     border: 2px solid #114577;
     display: grid;
-    width: 60vw;
+    width: 100%;
     grid-template-columns: auto auto auto auto auto;
   }
   
   .multi-button div {
     background-color: white;
-    padding: 1.5vh 3vw;
+    padding: 1rem ;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: calc(0.5rem + min(0.85vw,0.85vh));
     color: #114577;
+    /* vertical-align: middle; */
   }
   
 
@@ -48,11 +52,15 @@
 
 
   .video{
-    display: inline-block;
+    display: block;
     margin-top: 6vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: center;
   }
-
+  
   #video{
-    width: 60vw;
-    height: 60vh;
+    max-width: 79vh;
+    width: 100%;
+    height: 50vh;
   }
