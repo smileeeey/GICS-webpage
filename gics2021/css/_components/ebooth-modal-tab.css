@@ -1,5 +1,5 @@
 
-    
+  
   .design-span{
     color: white;
     /* font-weight: 900; */
@@ -17,7 +17,7 @@
     text-align: center;
   }
   .sidebar{
-    background-color: rgb(195, 207, 248);
+    background-color: #d2deec;
     float: right;
     width: 30%;
     height: 100%;
@@ -40,10 +40,11 @@
   .company-btn{
     display: inline;
     background-color: #114577;
-    font: normal 900 30px  white;
+    font: normal 600 calc(1rem + min(0.6vw, 0.6vh))  white;
     color: white;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 20px;
   }
 
   /***** 2nd PAGE *****/ 
@@ -92,7 +93,7 @@
 
   /* DESCRIPTION AREA */
   .prize{
-    background-color: rgb(115, 140, 248);
+    background-color: #d2deec;
     
     display: inline-block;
     grid-template-columns: 4fr, 1fr;

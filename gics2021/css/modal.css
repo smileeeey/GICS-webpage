@@ -41,10 +41,13 @@ body  *::-webkit-scrollbar-track {
   color: #efedef;
   cursor: pointer;
   display: block;
-  font-size: 1.1em;
+  font-size: calc(0.7rem + min(0.8vw, 0.8vh));
+
   font-weight: 700;
-  line-height: 1em;
-  padding: 2rem 0;
+  line-height: 3.8em;
+  height: 3.8em;
+  
+  /* padding: 2rem 0; */
   text-align: center;
 }
 
