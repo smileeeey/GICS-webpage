@@ -1,41 +1,46 @@
-.background {
-  position: relative;
-    min-width: 1920px;
-    height: 100vh;
-    margin: 0 auto;
-    background: url('/gics2021/data/img/intro/bg.png') left top no-repeat;
-    background-size: 100% 100%;
-    overflow: hidden;
-    
+.main {
+  margin: 0 auto;
+  height: 100vh;
+  background: url('/gics2021/data/img/intro/bg.png') left top no-repeat;
+  background-size: 100% 100%;
+  overflow-y: hidden;
 }
+
+.inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+.introLogo{
+  text-align: center;
+}
+
+.introLogo img {
+  margin: 2vh auto;
+  /* width: max(10vw, 10vh); */
+  width: 30vw;
+  min-width: 30vh;
+  max-width: 40vh;
+}
+
 
 .introBtn {
-  width: 100%;
   text-align: center;
-  margin: 0px auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-}
-
-.logo-wrapper{
-  margin-bottom: 10rem;
-}
-
-.logo {
-  text-align: center;
-  margin: 0px auto;
-  width: 20rem;
+  margin: 1vh auto;
+  width: 90vw;
 }
 
 .introBtn a {
   display: inline-block;
-  margin: 1rem;
+  margin: 1vw;
 }
 
-.introBtn a img {
-  width: 32rem;
+.introBtn img {
+  width: 30vw;
+  min-width: 40vh;
+  max-width: 50vh;
 }
 
 .introBtn a:hover {
@@ -51,15 +56,6 @@
 
 
 
-@media (max-width: 768px) {
-  .logo-wrapper{
-    margin-bottom: 1rem;
-  }
-  .logo {
-    width: 15rem;
-  }
-  .background{
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+@media (max-width: 830px) {
+  
 }
