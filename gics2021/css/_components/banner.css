@@ -12,7 +12,8 @@ div.banner li {
 
 div.banner {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  /* min-width: 230px; */
   height: 70px;
   /* margin-top: 40px; */
   /* padding: 0 90px; */

@@ -15,6 +15,8 @@
 .title{
     display: block;
     line-height: calc(5rem + .2vw);
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .title *{
@@ -34,18 +36,12 @@
 
 .history{
     display: block;
-    width: 60vw;
     margin-bottom: 3vh;
-    /* transition: all 0.4s ease-in-out; */
     max-width: 71vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .history img{
     width: 100%;
-}
-
-@media screen and (max-width: 830px) and (min-width: 0) {
-    .history{
-        width: 90vw;
-    }
 }
