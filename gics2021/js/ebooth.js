@@ -1,5 +1,3 @@
-// https://codepen.io/summin/pen/NWpaegG
-
 $(document).ready(function () {
 
   $('.multi-button').on('click', 'div', function () {
@@ -8,25 +6,14 @@ $(document).ready(function () {
 
     tabid = this.firstChild.id.split('-').slice(0,2).join('-');
     console.log(tabid)
+
+    $('.modal-title').css({"background-color": "#114577"});
+    $('.modal-title label').css({"color":"#fff"});
+    $('#'+tabid).prev().css({"background-color": "#d2deec"});
+    $('#'+tabid).prev().children('label').css({"color":"#114577"});
+
     document.getElementById(tabid).checked = true;
-
-    // let label = $(`label[for=${tabid}]`);
-    // $(`label[for=${tabid}]`).css({"background-color": "#d2deec"});
-    // $(`label[for=${tabid}]`).css({"color": "114577"});
-
-
   });
-
-  // $('.multi-button').on('click', 'a', function () {   
-  //   console.log(window.scrollY)
-  //   $(this.children).addClass('active');
-  //   $(this).siblings().find('button').removeClass('active');
-
-  //   tabid = this.id.split('-').slice(0,2).join('-');
-  //   document.getElementById(tabid).checked = true;
-
-  // });
-  
 
   $("#close_btn").click(function(){
     // $("body").removeClass("not_scroll");
@@ -44,7 +31,6 @@ $(document).ready(function () {
     sel = '#'+btnid
     $('.button').parent().removeClass('active');
     $(sel).parent().toggleClass("active")
-    // $(sel).parent().siblings().firstChild.removeClass('active');
   })
 
 });

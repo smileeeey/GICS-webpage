@@ -22,8 +22,20 @@ body  *::-webkit-scrollbar-track {
   -moz-flex-wrap: wrap;
   flex-wrap: wrap;
   overflow: hidden; 
-  border-radius: 15px;
+  border-radius: 50px;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 2em; */
+  background: white;
+
+  width: 80vw;
+  height: 75vh;
+  background-color: rgb(205, 206, 201);
 }
+
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
   color: #efedef;
@@ -58,10 +70,12 @@ body  *::-webkit-scrollbar-track {
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
   border-bottom: 1px solid #fff; }
+
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 5px solid #ffffff; 
+  border-bottom: 5px solid #ffffff;
 }
+
 
 .tabs [class^="tab"] [type="radio"]:checked + div,
 .tabs [class*=" tab"] [type="radio"]:checked + div {
@@ -129,24 +143,21 @@ margin-left: -100%; } */
 .close_button{
   position: absolute;
   top: 18%;
-  left: 87%;
+  left: 90%;
   transform: translate(-50%, -50%);
   z-index: 11;
 
-
-  background-color: #FF9980;
-  border: 2px solid #fff;
+  /* background-color: #FF9980; */
+  /* border: 2px solid #fff; */
   padding: 0.4rem 1rem;
   font-size: 2rem;
-  margin-left: -10px;
-  margin-top: -9px;
   border-radius: 50%;
   transition: all 0.5s ease;
 
-  -webkit-box-shadow: -4px -2px 6px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: -4px -2px 6px 0px rgba(0,0,0,0.1);
-  box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1);
-  color: white;
+  /* -webkit-box-shadow: -4px -2px 6px 0px rgba(0,0,0,0.1); */
+  /* -moz-box-shadow: -4px -2px 6px 0px rgba(0,0,0,0.1); */
+  /* box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1); */
+  color: black;
 }
 
 .close_button:hover {
