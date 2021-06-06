@@ -1,6 +1,5 @@
 .main .inner {
     position: relative;
-    min-width: 1920px;
     height: 90vh;
     /* width: 100vw; */
     margin: 0 auto;
@@ -10,7 +9,7 @@
 }
 
 .company a{
-  display: block;
+  display: inline-block;
 }
 .company a:hover {
   top: -15px;
@@ -45,69 +44,75 @@
 }
 
 .company img{
-  margin-inline: -70px;
+  /* margin-inline: -70px; */
 }
 
 
 .sdp {
+  width: 80vw;
   top: 61%;
   left: 55%;
   grid-template-columns: repeat(2,1fr);
   z-index: 4;
 }
 .sdp img{
-  width: 630px;
+  width: 100%;
   /* margin-inline: 50px; */
 }
 
 .sd_1 {
+  width: 80vw;
   top: 30%;
-  left: 53%;
-  grid-template-columns: repeat(4,1fr);
+  left: 50%;
+  grid-template-columns: repeat(5,1fr);
   z-index: 3;
 }
 .sd_1 img{
-  width: 470px;
+  width: 130%;
 }
 
 .sd_2 {
+  width: 95vw;
   top: 65%;
-  left: 53%;
-  grid-template-columns: repeat(5,1fr);
+  left: 50%;
+  grid-template-columns: repeat(6,1fr);
   z-index: 2;
 }
 .sd_2 img{
-  width: 470px;
+  width: 130%;
 }
 
 .d_1 {
+  width: 50vw;
   top: 30%;
-  left: 53%;
+  left: 55%;
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
 .d_1 img{
-  width: 500px;
+  width: 100%;
 }
 
 .d_2 {
+  width: 50vw;
   top: 65%;
-  left: 53%;
+  left: 55%;
   grid-template-columns: repeat(2,1fr);
   z-index: 1;
 }
 .d_2 img{
-  width: 500px;
+  width: 100%;
 }
 
 .p {
+  width: 80vw;
   top: 61%;
   left: 55%;
   grid-template-columns: repeat(2,1fr);
   z-index: 0;
 }
 .p img{
-  width: 700px;
+  width: 100%;
 }
 
 
@@ -116,19 +121,20 @@
 
 .logo-container{
   position: absolute;
-  left: 28.5%;
-  top: -12%;
-  transform:translate(-50%, 0%);
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+  width: 90vw;
+}
 
-  max-width: 1100px;
+.logo-img{
   width: 100%;
-  display: grid;
-    grid-template-columns: auto auto;
 }
 
 
 /* button to select rank */
-
+/* 
 .bottom_button{
     position: absolute;
     left: 50%;
@@ -167,4 +173,47 @@
   .active {
     background-color: #114577 !important;
     color: whitesmoke !important;
+  } */
+
+
+  .bottom_button{
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    display: inline-block;
+    color: #114577;
+    transform:translate(-50%, 0%);
+    text-align: center;
   }
+  
+  .multi-button {
+    border: 3px solid #114577;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  
+  .multi-button div {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.1vw;
+    color: #114577;
+  }
+  
+  
+  .multi-button div:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: #d2deec;
+  }
+  .multi-button a{
+    padding: 1.5vh;
+    display: block;
+  }
+  
+  
+  .active {
+    background-color: #114577 !important;
+    color: whitesmoke !important;
+  }
+  
