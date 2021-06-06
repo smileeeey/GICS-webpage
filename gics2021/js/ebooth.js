@@ -15,6 +15,11 @@ $(document).ready(function () {
 });
 
 function ready_modal(tabid){
+  var h_title = $('.modal-title').height();
+  $('.tab-2').css({"height": h_title});
+  console.log($('#'+tabid).parent())
+  $('#'+tabid).parent().css({"height": "100%"});
+
   $('.modal-title').css({"background-color": "#114577"});
   $('.modal-title label').css({"color":"#fff"});
 

@@ -94,11 +94,16 @@ body  *::-webkit-scrollbar-track {
   opacity: 0;
   /* padding: 2rem 0; */
   width: 90%;
-  max-width: 0px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  max-width: 0px;
+  max-height: 0px;
+}
+
+.tabs [class*=" tab"] [type="radio"] + div *{
+  max-width: 0px;
   max-height: 0px;
 }
 
