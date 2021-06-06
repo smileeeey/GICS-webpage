@@ -110,7 +110,7 @@
 .multi-button {
   border: 3px solid #114577;
   display: grid;
-  width: 60vw;
+  width: 64vw;
   grid-template-columns: auto auto auto auto;
 }
 

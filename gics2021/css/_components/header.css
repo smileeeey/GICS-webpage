@@ -9,7 +9,7 @@
   z-index: 1000;
   height: 10vw;
   max-height: 10vh;
-  min-height: 5rem;
+  min-height: 4rem;
   font-family: 'GmarketSans', sans-serif !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
 }
@@ -22,11 +22,11 @@
 
 .header .header-logo {
   position: absolute;
-  left: 6.85%;
+  left: 4%;
   z-index: 1002;
-  height: 11vw;
+  height: 15vw;
   min-height: 6rem;
-  max-height: 11vh;
+  max-height: 15vh;
 }
 
 .header .header-menu {
@@ -71,6 +71,7 @@
 
 .header .header-menu a.active-header {
   font-size: calc(1rem + min(.2vw, .2vh));
+  border-bottom-color: #363636;
 }
 
 .pc.user-info {
