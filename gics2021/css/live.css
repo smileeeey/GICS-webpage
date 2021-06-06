@@ -29,12 +29,11 @@
   
   .multi-button div {
     background-color: white;
-    padding: 1rem ;
     font-weight: bold;
     font-size: calc(0.5rem + min(0.85vw,0.85vh));
     color: #114577;
-    /* vertical-align: middle; */
   }
+  
   
 
   .multi-button div:hover{

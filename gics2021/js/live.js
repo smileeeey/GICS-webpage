@@ -1,11 +1,11 @@
 
 var videos = [];
 
-videos[0] = 'https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&?controls=0';
-videos[1] = 'https://www.youtube.com/embed/GA9GigGuf24?autoplay=1&mute=1&?controls=0';
-videos[2] = 'https://www.youtube.com/embed/sfNfEDYj2Ew?autoplay=1&mute=1&?controls=0';
-videos[3] = 'https://www.youtube.com/embed/Qni9o9AHqEw?autoplay=1&mute=1&?controls=0';
-videos[4] = 'https://www.youtube.com/embed/FjHGZj2IjBk?autoplay=1&mute=1&?controls=0';
+videos[0] = 'https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&controls=1';
+videos[1] = 'https://www.youtube.com/embed/GA9GigGuf24?autoplay=1&controls=1';
+videos[2] = 'https://www.youtube.com/embed/sfNfEDYj2Ew?autoplay=1&controls=1';
+videos[3] = 'https://www.youtube.com/embed/Qni9o9AHqEw?autoplay=1&controls=1';
+videos[4] = 'https://www.youtube.com/embed/FjHGZj2IjBk?autoplay=1&controls=1';
 
 $(document).ready(function () {
   $('.multi-button').on('click', 'div', function () {
