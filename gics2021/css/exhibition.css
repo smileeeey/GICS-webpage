@@ -8,14 +8,19 @@
     overflow: hidden;
     text-align: center;
 }
-.company {
-    display: grid;
-    position: absolute;
-    list-style: none;
-    /* justify-self: end; */
-    transform:translate(-50%, -50%);
+
+.company{
+  position: absolute;
+  transform:translate(-50%, -50%);
 }
 
+.booth {
+    display: grid;
+    list-style: none;
+    /* justify-self: end; */
+}
+
+.rank img:hover,
 .item img:hover {
     top: -2rem;
     transform: translateZ(0);
@@ -27,45 +32,72 @@
     transition-property: transform;
   }
 
-.company img{
+.booth img{
     margin-left: max(-3vw, -3vh);
     margin-right: max(-3vw, -3vh);
     cursor: pointer;
 }
 
+.rank {
+  position: absolute;
+  top: 80%;
+  transform:translate(0, -50%);
+}
 
-.sdp {
+.sdp{
   top: 88%;
   left: 52%;
-  grid-template-columns: repeat(2,1fr);
   z-index: 4;
   text-align: center;
+  width: 44vw;
+  max-width: 68vh;
+}
+
+.sdp .booth{
+  grid-template-columns: repeat(2,1fr);
   width: auto;
 }
-.sdp img{
+
+.sdp .booth img{
+  width: 100%;
+}
+
+.sdp .rank{
+  left: 100%;
+}
+.sdp .rank img{
   width: 28vw;
-  max-width: 32vh;
+  max-width: 40vh;
 }
 
 .sd_1 {
   top: 67.2%;
   left: 52%;
-  grid-template-columns: repeat(5,1fr);
   z-index: 3;
+  width: 50vw;
+  max-width: 80vh;
+}
+
+.sd_1 .booth{
+  grid-template-columns: repeat(5,1fr);
   width: auto;
 }
 
 .sd_2 {
   top: 49.5%;
   left: 52%;
-  grid-template-columns: repeat(6,1fr);
   z-index: 2;
+  width: auto;
+  
+}
+
+.sd_2 .booth{
+  grid-template-columns: repeat(6,1fr);
   width: auto;
 }
 
-.sd_1 img, .sd_2 img{
-  width: 21vw;
-  max-width: 29vh;
+.sd_1 .booth img, .sd_2 .booth img{
+  width: 100%;
 }
 
 .d {
@@ -75,7 +107,13 @@
   z-index: 1;
   width: auto;
 }
-.d img{
+
+.d .booth{
+  grid-template-columns: repeat(4,1fr);
+  width: auto;
+}
+
+.d .booth img{
   width: 18vw;
   max-width: 26vh;
 }
@@ -87,6 +125,12 @@
   z-index: 0;
   width: auto;
 }
+
+.p .booth{
+  grid-template-columns: repeat(2,1fr);
+  width: auto;
+}
+
 .p li:nth-child(1) img{
   margin-right: 3vw;
 }
@@ -94,7 +138,7 @@
   margin-left: 3vw;
 }
 
-.p img{
+.p .booth img{
   width: 18vw;
   max-width: 24vh;
 }
