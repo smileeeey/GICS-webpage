@@ -17,6 +17,7 @@
     text-align: center;
   }
 
+
   .video-left-container{
     width: 60vw;
   }
@@ -102,7 +103,16 @@
     grid-template-rows: auto;
     height: 100%;
   }
-  .video-grid-item {
+
+  
+  .vv{
+    margin-top: calc(3rem + min(0.4vw,0.4vh));
+    width: 50vw;
+    height: 25vw;
+
+  }
+  .video-video {
+    width: calc(10vw + min(9vw,9vh));
   }
   
   /***** 4th PAGE *****/  
@@ -128,7 +138,12 @@
   
   .prize-description .text-subject{
     font-weight: 600;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    font-size: calc(1rem + min(.9vw, .9vh));
+  }
+
+  .text-subject-desc{
+    font-size: calc(.5rem + min(.9vw, .9vh));
   }
   
   .prize-description .detail{
