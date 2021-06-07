@@ -59,7 +59,7 @@
   display: inline-block;
 }
 
-.side-flag img{
+.side-flag > img{
   width: 100%;
 }
 
@@ -92,9 +92,8 @@
   max-width: 25vh;
 }
 
-.side-flag > img{
-  width: 100%;
-}
+
+
 
 .mid-entries {
   position: absolute;
