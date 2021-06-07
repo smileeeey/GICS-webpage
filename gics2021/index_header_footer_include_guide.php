@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>GICS</title>
+
+  <!-- Favicons -->
+  <link href="/gics2021/data/img/favicon.png" rel="icon" />
+
+
+  <!-- Main CSS File -->
+  <link href="/gics2021/css/_style.css" rel="stylesheet" />
+
+  <!-- page CSS File -->
+  <link rel="stylesheet" href="/gics2021/css/index.css">
+  <link rel="stylesheet" href="/gics2021/css/_components/spin.css">
+
+  <!-- Vendor JS  -->
+  <script src="/gics2021/js/_libraries/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <?php include_once "./_components/header.html";?>
+
+  <div class="main">
+    <div class="inner">
+      <div class="pc">
+
+        <div class="top-entries">
+          <div class="side-flag" id="left-flag">
+            <a href="/gics2021/vod/index.html">
+              <img src="/gics2021/data/img/index/side_left_flag.png">
+            </a>
+          </div>
+
+          <div id="main-flag">
+            <img src="/gics2021/data/img/index/main_flag.png">
+
+            <iframe id="video" src="https://www.youtube.com/embed/pEuwMEeh2ac?autoplay=1&mute=1&controls=1"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+
+          </div>
+
+          <div class="side-flag" id="right-flag">
+            <img src="/gics2021/data/img/index/side_right_flag.png">
+
+            <div class="sdp-banner">
+              <img class="banner-gif" src="/gics2021/data/img/index/sdp_banner.gif" loop="infinite" alt="">
+            </div>
+            <div class="sd-banner">
+              <img class="banner-gif" src="/gics2021/data/img/index/sd_banner.gif" loop="infinite" alt="">
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="mid-entries shadow-filter">
+          <div>
+            <a href="/gics2021/eposter/list.html">
+              <img src="/gics2021/data/img/index/eposter.png" alt="eposter">
+            </a>
+          </div>
+          <div>
+            <a href="/gics2021/live/index.html">
+              <img src="/gics2021/data/img/index/live.png" alt="live">
+            </a>
+          </div>
+          <div>
+            <a href="/gics2021/exhibition/index.html">
+              <img src="/gics2021/data/img/index/exhibition.png" alt="exhibition">
+            </a>
+          </div>
+        </div>
+
+        <div class="bottom-entries shadow-filter">
+          <div class="bottom-entry info">
+            <a href="http://gics.org">
+              <img class="icon" src="/gics2021/data/img/index/info_icon.png" alt="information">
+              <img class="letter" src="/gics2021/data/img/index/info.png" alt="information">
+            </a>
+          </div>
+
+          <div id="main_icon">
+            <img src="/gics2021/data/img/index/main_icon.png" alt="GICS 2021">
+          </div>
+
+          <div class="bottom-entry award">
+            <a href="/gics2021/awards/index.html">
+              <div class="content-carrousel">
+                <img class="icon" src="/gics2021/data/img/index/award_icon.png" />
+              </div>
+              <img class="letter" src="/gics2021/data/img/index/award.png" alt="award">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="mobile">
+        <div class="index-mobile">
+
+          <div class="container">
+            <a href="/gics2021/index.html" data-animation="ripple">Home</a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/live/index.html" data-animation="ripple">Live Theater</a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/vod/index.html" data-animation="ripple">VOD</a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/eposter/list.html" data-animation="ripple">Eposter</a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/exhibition/index.html" data-animation="ripple">Exibition</span></a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/awards/index.html" data-animation="ripple">Awards</span></a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/history/index.html" data-animation="ripple">History</span></a>
+          </div>
+          <div class="container">
+            <a href="/gics2021/login/login.html" data-animation="ripple">Login</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <?php include_once "./_components/footer.html";?>
+
+</body>
+
+</html>

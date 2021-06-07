@@ -59,16 +59,15 @@
   display: inline-block;
 }
 
-.side-flag img{
-  width: 100%;
-}
 
 #left-flag, #left-flag img{
   float: left;
+  width: 100%;
 }
 
-#right-flag, #right-flag img{
+#right-flag, #right-flag > img{
   float: right;
+  width: 100%;
 }
 
 .sdp-banner{
