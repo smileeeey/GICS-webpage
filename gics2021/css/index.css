@@ -72,37 +72,28 @@
 }
 
 .sdp-banner{
-  display: none;
   position: absolute;
   left: 91%;
   top:30%;
   transform: translate(-50%,-50%);
-  /* background-color: blue; */
-  /* border: blue 5px solid; */
-  /* width: 100px;
-  height: 100px; */
-  background-image:url('/gics2021/data/img/index/sdp_banner.gif');
-  /* height: 500px;
-  width: 100px; */
+  z-index: 3;
 }
 
 .sd-banner{
-  display: none;
   position: absolute;
   left: 91%;
   top: 70%;
   transform: translate(-50%,-50%);
-  /* background-color: blue; */
-  /* border: blue 5px solid; */
-  /* width: 100px;
-  height: 100px; */
-  background-image:url('/gics2021/data/img/index/sdp_banner.gif');
-  /* height: 500px;
-  width: 100px; */
+  z-index: 3;
 }
 
 .banner-gif{
-  width: 10vw;
+  width: 15vw;
+  max-width: 25vh;
+}
+
+.side-flag > img{
+  width: 100%;
 }
 
 .mid-entries {
