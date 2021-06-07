@@ -6,10 +6,14 @@
   padding: 0;
 }
 
-html,
-body {
-  font-size: 62.5%;
-  height: 100%;
+
+.main .inner {
+  position: relative;
+  height: 90vh;
+  margin: 0 auto;
+  background: url('/gics2021/data/img/index/bg_home.png') left top no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -17,6 +21,11 @@ body {
   body {
     font-size: 50%;
   }
+}
+
+.login_box{
+  font-size: 62.5%;
+  height: 80%;
 }
 
 input::placeholder {
@@ -129,7 +138,7 @@ button {
 }
 
 .btn {
-  border: 3px solid #4133ff8f;
+  border: 4px solid #114577;
   display: inline-block;
   padding: 10px;
   position: relative;
@@ -148,10 +157,10 @@ input[type='radio'].toggle + label {
 }
 input[type='radio'].toggle + label:hover {
   background: none;
-  color: #4133ff8f;
+  color: #114577;
 }
 input[type='radio'].toggle + label:after {
-  background: #4133ff8f;
+  background: #114577;
   content: '';
   height: 100%;
   position: absolute;
@@ -212,7 +221,7 @@ input[type='radio'].toggle:checked + label:after {
   height: 4rem;
   margin: 3rem 0 2.2rem;
   color: rgba(255, 255, 255, 0.8);
-  background: #4133ff8f;
+  background: #114577;
   font-size: 1.5rem;
   border-radius: 3rem;
   cursor: pointer;
