@@ -132,56 +132,13 @@
   top: 50%;
   transform:translate(-50%, -50%);
   text-align: center;
-  width: 90vw;
+  width: 80vw;
+  max-width: 130vh;
 }
 
 .logo-img{
   width: 100%;
 }
-
-
-/* button to select rank */
-/* 
-.bottom_button{
-    position: absolute;
-    left: 50%;
-    bottom: 4%;
-    
-    place-items: center;
-    color: #114577;
-    transform:translate(-50%, 0%);
-  }
-  
-  .multi-button {
-    border: 5px solid #114577;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-  }
-  .multi-button button {
-    border: 5px solid #114577;
-    background-color: white;
-    border: none;
-    margin: 0;
-    padding: 1em 0.5em;
-    font-weight: bold;
-    outline: none;
-    font-size: 1.4em;
-    color: #114577;
-    width: 250px;
-  }
-  
-  .multi-button button:hover{
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    background-color: rgb(207, 207, 24);
-  }
-  
-  
-  .active {
-    background-color: #114577 !important;
-    color: whitesmoke !important;
-  } */
-
 
   .bottom_button{
     position: absolute;
