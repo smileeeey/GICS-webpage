@@ -131,7 +131,7 @@
 .bottom-entries{
   position: absolute;
   left: 50%;
-  top: 86%;
+  top: 90%;
   transform:translate(-50%, -50%);
   width: 70vw;
   max-width: 150vh;
@@ -146,13 +146,13 @@
 }
 
 #main_icon{
-  width: 50%;
+  width: 60%;
   text-align: center;
   transform:translate(0, 25%);
 }
 
 #main_icon img{
-  width: 50%;
+  width: 60%;
 }
 
 .bottom-entry {
