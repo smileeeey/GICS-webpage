@@ -42,6 +42,7 @@ body  *::-webkit-scrollbar-track {
     font-size: 1.1rem;
     vertical-align: middle;
     margin-left: 3%;
+    text-align: center;
 }
 
 .top-entries .like-button{
