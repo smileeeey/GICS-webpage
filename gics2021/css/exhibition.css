@@ -44,42 +44,44 @@
 }
 
 .company.sdp .item img{
-  width: 28vw;
-  max-width: 32vh;
+  width: 30vw;
+  max-width: 37vh;
 }
 
 .company.sd_1 {
-  bottom: 31%;
+  bottom: 36%;
   grid-template-columns: repeat(5,1fr);
   z-index: 3;
   width: auto;
 }
 
 .company.sd_2 {
-  bottom: 49.2%;
+  bottom: 53%;
   grid-template-columns: repeat(6,1fr);
+  margin-left: 2vw;
+  margin-right: 2vw;
   z-index: 2;
   width: auto;
 }
 
 .company.sd_1 .item img, .company.sd_2 .item img{
-  width: 21vw;
-  max-width: 29vh;
+  width: 20vw;
+  max-width: 26vh;
 }
 
 .company.d {
-  bottom: 67.5%;
+  bottom: 70.6%;
   grid-template-columns: repeat(4,1fr);
   z-index: 1;
   width: auto;
 }
 .company.d .item img{
-  width: 18vw;
-  max-width: 26vh;
+  width: 17vw;
+  max-width: 20vh;
 }
 
 .company.p {
-  bottom: 83%;
+  bottom: 85%;
   left: 52%;
   grid-template-columns: repeat(2,1fr);
   z-index: 0;
@@ -93,8 +95,8 @@
 }
 
 .company.p .item img{
-  width: 18vw;
-  max-width: 24vh;
+  width: 12vw;
+  max-width: 15vh;
 }
 
 
@@ -113,13 +115,16 @@
   display: grid;
   width: 80vw;
   grid-template-columns: auto auto auto auto auto;
+  align-items: center;
 }
 
 .multi-button div {
   background-color: white;
   font-weight: bold;
-  font-size: 1.1vw;
+  font-size: calc(0.4rem + min(0.9vw, 0.9vh));
   color: #114577;
+  height: 100%;
+  line-height: 100%;
 }
 
 
