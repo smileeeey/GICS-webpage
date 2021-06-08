@@ -76,7 +76,7 @@
 .sdp-banner{
   position: absolute;
   left: 91%;
-  top:30%;
+  top:25%;
   transform: translate(-50%,-50%);
   z-index: 3;
 }
@@ -84,14 +84,14 @@
 .sd-banner{
   position: absolute;
   left: 91%;
-  top: 70%;
+  top: 60%;
   transform: translate(-50%,-50%);
   z-index: 3;
 }
 
 .banner-gif{
   width: 15vw;
-  max-width: 25vh;
+  max-width: 21vh;
 }
 
 
