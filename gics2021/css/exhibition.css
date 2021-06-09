@@ -81,7 +81,7 @@
 }
 
 .company.p {
-  bottom: 85%;
+  bottom: 84%;
   left: 52%;
   grid-template-columns: repeat(2,1fr);
   z-index: 0;
