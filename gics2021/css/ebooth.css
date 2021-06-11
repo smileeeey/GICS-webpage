@@ -30,73 +30,24 @@
   width: 95vw;
   max-width: 115vh;
 }
-.center img{
+#main-booth {
   width: 100%;
 }
-
-#center_top{
-  width: auto;
+#main-booth > img{
+  width: 100%;
+}
+#yt-icon{
   position: absolute;
   left: 50%;
-  bottom: 25%;
-  transform:translate(-50%, 0%);
-  z-index: 2;
+  top: 45%;
+  transform:translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
-
-#center_bottom{
-  position: absolute;
-  left: 50%;
-  bottom: 15%;
-  transform:translate(-50%, 0%);
-  z-index: 3;
+#yt-icon > img{
+  width: 10%;
 }
-
-.left_side{
-  float: left;
-  transform:translate(-75%, -12%);
-}
-
-.right_side{
-  float: right;
-  transform:translate(75%, 7%);
-}
-
-/*=== buttom ===*/
-/* .bottom_button{
-  position: absolute;
-  left: 50%;
-  bottom: 2%;
-  display: inline-block;
-  color: #43425d;
-  transform:translate(-50%, 0%);
-}
-
-.multi-button {
-  border: 3px solid #43425d;
-  width: 60vw;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-  .multi-button button {
-  background-color: white;
-  padding: 1.5vh 1.6vw;
-  font-weight: bold;
-  font-size: 1vw;
-  color: #43425d;
-}
-
-.multi-button button:hover{
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  background-color: rgb(211, 211, 15);
-}
-
-
-.active {
-  background-color: #43425d !important;
-  color: whitesmoke !important;
-} */
-
 
 .bottom_button{
   position: absolute;
@@ -133,11 +84,8 @@
   background-color: #d2deec;
 }
 .multi-button a{
-  /* padding: 1.5vh; */
   display: block;
-  
 }
-
 
 .active {
   background-color: #114577 !important;
